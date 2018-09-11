@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Card from './Card'
 import Executions from './Executions'
 
@@ -9,24 +9,18 @@ const Details = props => {
 
   const outlet = state
   return (
-    <div style={style.container}>
+    <React.Fragment>
       <Card outlet={outlet} />
       <div style={style.section}>
         <h3>About the Outlet</h3>
         <p>{outlet.about}</p>
       </div>
       <Executions outlet={outlet} />
-    </div>
+    </React.Fragment>
   )
 }
 
 const style = {
-  container: {
-    height: '100vh',
-    background: 'rgba(5,5,5)',
-    color: 'rgba(255,255,255, 0.9)'
-  },
-
   section: {
     position: "relative",
     display: "block",
@@ -34,7 +28,8 @@ const style = {
     margin: '6vw 4vw 6vw 4vw',
     fontSize: '70%',
     letterSpacing: 0.5,
-    fontWeight: 100
+    fontWeight: 100,
+    color: 'rgba(255,255,255, 0.85)'
   },
 
   close: {
