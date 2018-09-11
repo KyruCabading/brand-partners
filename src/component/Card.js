@@ -6,7 +6,7 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 const Card = props => {
   const { outlet } = props
   return (
-    <Parallax strength={90}>
+    <Parallax strength={100}>
       <div style={style.card}>
         <div style={style.header}>
           <h1 style={style.title}>{outlet.name}</h1>
