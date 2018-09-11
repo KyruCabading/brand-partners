@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Card from './Card'
 import Executions from './Executions'
-import Page from './Page';
 
 class DetailsContainer extends Component {
   render() {
@@ -11,7 +10,7 @@ class DetailsContainer extends Component {
 
     const { outlet } = state
     return (
-      <Page>
+      <React.Fragment>
         <Card outlet={outlet} />
         <div style={style.section}>
           <h3>About the Outlet</h3>
@@ -20,7 +19,7 @@ class DetailsContainer extends Component {
         <div>
           <Executions outlet={outlet} />
         </div>
-      </Page>
+      </React.Fragment>
     )
   }
 }

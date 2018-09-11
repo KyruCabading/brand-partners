@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import OutletCard from './Card'
 import data from './data/data.json'
-import Page from './Page'
 
 class OutletsContainer extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      data: null
+      data: null,
+      mounted: false
     }
   }
 
@@ -35,7 +35,8 @@ class OutletsContainer extends Component {
             prev: true,
             outlet
           }
-        }}>
+        }}
+        onClick={() => this.setState({ mounted: false }, console.log(this.state.mounted))}>
         <OutletCard
           key={outlet.id}
           outlet={outlet}
@@ -45,9 +46,19 @@ class OutletsContainer extends Component {
   }
 
   render() {
+    window.onscroll = () => {
+      if (this.state.mounted === false) {
+        return null
+      }
+      console.log("scrolling")
+    }
     const { data } = this.state
     if (data) {
-      return <Page>{this.renderOutlets(data.outlets)}</Page>
+      return (
+        <React.Fragment>
+          {this.renderOutlets(data.outlets)}
+        </React.Fragment>
+      )
     }
     return null
   }
