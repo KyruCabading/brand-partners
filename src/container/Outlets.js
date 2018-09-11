@@ -28,7 +28,7 @@ class OutletsContainer extends Component {
       <Link
         style={style.link}
         to={{
-          pathname: `/outlet/${outlet.id}`,
+          pathname: `/outlet/${outlet.slug}`,
           state: outlet
         }}>
         <OutletCard
