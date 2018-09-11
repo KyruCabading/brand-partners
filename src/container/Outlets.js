@@ -26,7 +26,7 @@ class OutletsContainer extends Component {
   renderOutlets = outlets => {
     return outlets.map(outlet =>
       <Link
-        style={{ textDecoration: 'none' }}
+        style={style.link}
         to={{
           pathname: `/outlet/${outlet.id}`,
           state: outlet
@@ -45,6 +45,13 @@ class OutletsContainer extends Component {
       return this.renderOutlets(data.outlets)
     }
     return null
+  }
+}
+
+const style = {
+  link: {
+    textDecoration: 'none',
+    color: 'none'
   }
 }
 
