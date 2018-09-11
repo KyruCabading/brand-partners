@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import data from '../data/data.json'
 import { Link } from 'react-router-dom'
 import OutletCard from '../component/Card'
+import data from '../data/data.json'
 
 class OutletsContainer extends Component {
   constructor(props) {
@@ -25,15 +25,17 @@ class OutletsContainer extends Component {
 
   renderOutlets = outlets => {
     return outlets.map(outlet =>
-      <Link to={{
-        pathname: `/outlet/${outlet.id}`,
-        state: outlet
-      }}>
+      <Link
+        style={{ textDecoration: 'none' }}
+        to={{
+          pathname: `/outlet/${outlet.id}`,
+          state: outlet
+        }}>
         <OutletCard
           key={outlet.id}
           outlet={outlet}
         />
-      </Link >
+      </Link>
     )
   }
 
