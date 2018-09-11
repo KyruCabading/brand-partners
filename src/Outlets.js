@@ -8,8 +8,7 @@ class OutletsContainer extends Component {
     super(props)
 
     this.state = {
-      data: null,
-      mounted: false
+      data: null
     }
   }
 
@@ -36,7 +35,7 @@ class OutletsContainer extends Component {
             outlet
           }
         }}
-        onClick={() => this.setState({ mounted: false }, console.log(this.state.mounted))}>
+      >
         <OutletCard
           key={outlet.id}
           outlet={outlet}
@@ -46,12 +45,6 @@ class OutletsContainer extends Component {
   }
 
   render() {
-    window.onscroll = () => {
-      if (this.state.mounted === false) {
-        return null
-      }
-      console.log("scrolling")
-    }
     const { data } = this.state
     if (data) {
       return (
