@@ -1,22 +1,20 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+import { Route } from 'react-router-dom'
+import Outlets from './container/Outlets'
+import Details from './component/Details'
 import './App.css'
-import Button from '@material-ui/core/Button'
+import { CSSTransitionGroup } from 'react-transition-group'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Route exact path="/" component={Outlets} />
+        <Route exact path={`/outlet/:outletId`} component={Details} />
       </div>
     );
   }
 }
+
 
 export default App;

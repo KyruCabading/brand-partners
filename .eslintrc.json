@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "standard",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "graphql"
+  ],
+  "rules": {},
+  "globals": {
+    "fetch": false
+  },
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}
