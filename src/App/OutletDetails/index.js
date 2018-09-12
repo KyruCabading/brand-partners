@@ -3,6 +3,7 @@ import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import ParallaxImage from '../ParallaxImage'
 import Executions from '../Executions'
+import { Typography } from '@material-ui/core'
 
 const style = {
   card: {
@@ -36,8 +37,8 @@ export default ({
     <Card style={style.card}>
       <ParallaxImage outlet={outlet} goBack={goBack} />
       <div style={style.section}>
-        <h3>About the Outlet</h3>
-        <p>{outlet.about}</p>
+        <Typography variant="body2">About the Outlet</Typography>
+        <Typography variant="body1">{outlet.about}</Typography>
       </div>
       <div>
         <Executions outlet={outlet} />

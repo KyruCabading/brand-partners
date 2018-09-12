@@ -24,7 +24,7 @@ const ParallaxImage = ({
       </CardActions>
       <div style={style.card}>
         <div style={style.header}>
-          <Typography variant="title" style={style.title} >{outlet.name}</Typography>
+          <Typography variant="title" >{outlet.name}</Typography>
           <Typography variant="caption" style={style.subtitle}>
             <FontAwesomeIcon icon={faMapMarkerAlt} /> {outlet.location}
           </Typography>
@@ -71,14 +71,10 @@ const style = {
     top: "70%",
     margin: '0 4vw 0 4vw'
   },
-  title: {
 
-    color: "rgb(255,255,255,0.85)"
-  },
   subtitle: {
     marginTop: 5,
     color: 'rgb(100,100,100,0.8)',
-
   },
   background: {
     width: "100vw"
