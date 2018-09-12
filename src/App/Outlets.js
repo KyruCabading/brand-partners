@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import OutletCard from './Card'
-import data from './data/data.json'
+import ParallaxImage from './ParallaxImage'
+import data from '../data/outlets.json'
 
 class OutletsContainer extends Component {
   constructor(props) {
@@ -31,12 +31,12 @@ class OutletsContainer extends Component {
         to={{
           pathname: `/outlet/${outlet.slug}`,
           state: {
-            prev: true,
-            outlet
+            outlet,
+            goBack: true
           }
         }}
       >
-        <OutletCard
+        <ParallaxImage
           key={outlet.id}
           outlet={outlet}
         />

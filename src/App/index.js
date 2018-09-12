@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './style.css';
-import Outlets from '../Outlets'
-import Details from '../Details'
+import Outlets from './Outlets'
+import Details from './OutletDetails'
 
 class App extends Component {
   componentWillReceiveProps() {
@@ -10,11 +10,8 @@ class App extends Component {
   }
 
   render() {
-    const { location } = this.props;
-    const modal = location.state && location.state.to === 'modal';
-
     return (
-      <Switch location={modal ? this.previousView : location}>
+      <Switch>
         <Route exact path="/" component={Outlets} />
         <Route exact path={`/outlet/:outletId`} component={Details} />
       </Switch>
