@@ -15,6 +15,7 @@
     "react-parallax": "^1.8.0",
     "react-pose": "^3.3.0",
     "react-router-dom": "^4.3.1",
+    "react-router-transition": "^1.2.1",
     "react-scripts": "1.1.5",
     "react-swipeable-views": "^0.12.17",
     "react-transition-group": "^2.4.0"

@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import ParallaxImage from './ParallaxImage'
-import data from '../data/outlets.json'
+import Sticky from 'react-sticky-el'
+
+import data from '../local/outlets.json'
+import logo from '../local/logo.png'
+import { Typography } from '@material-ui/core';
 
 class OutletsContainer extends Component {
   constructor(props) {
@@ -31,8 +35,7 @@ class OutletsContainer extends Component {
         to={{
           pathname: `/outlet/${outlet.slug}`,
           state: {
-            outlet,
-            goBack: true
+            outlet
           }
         }}
       >
@@ -48,9 +51,12 @@ class OutletsContainer extends Component {
     const { data } = this.state
     if (data) {
       return (
-        <React.Fragment>
+        <div style={style.wrapper}>
+          <div style={style.header}>
+            <img src={logo} style={style.logo} alt="Winston Logo"></img>
+          </div>
           {this.renderOutlets(data.outlets)}
-        </React.Fragment>
+        </div>
       )
     }
     return null
@@ -58,6 +64,22 @@ class OutletsContainer extends Component {
 }
 
 const style = {
+  wrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'left'
+  },
+
+  header: {
+    position: 'sticky',
+    margin: '4vw',
+    zIndex: 1
+  },
+
+  logo: {
+    width: '30%'
+  },
+
   link: {
     textDecoration: 'none',
     color: 'none'

@@ -4,17 +4,14 @@ import SwipeableViews from 'react-swipeable-views'
 const Executions = props => {
   const { outlet } = props
   return (
-    <div>
-      <h1 style={style.header}>Executions</h1>
-      <SwipeableViews>
-        <div style={style.container}>
-          <img style={style.background} src={outlet.image} alt={outlet.name} />
-        </div>
-        <div style={style.container}>
-          <img style={style.background} src={outlet.image} alt={outlet.name} />
-        </div>
-      </SwipeableViews>
-    </div>
+    <SwipeableViews>
+      <div style={style.container}>
+        <img style={style.background} src={outlet.image} alt={outlet.name} />
+      </div>
+      <div style={style.container}>
+        <img style={style.background} src={outlet.image} alt={outlet.name} />
+      </div>
+    </SwipeableViews>
   )
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { CardMedia, Typography, CardActions, IconButton, CardActionArea } from '@material-ui/core/'
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos'
 
@@ -6,10 +7,8 @@ import { Parallax, Background } from 'react-parallax'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
-const ParallaxImage = ({
-  outlet,
-  goBack = null
-}) => {
+const ParallaxImage = props => {
+  const { outlet, goBack } = props
   return (
     <Parallax style={style.container} strength={100}>
       <CardActions style={style.cardActions} disableActionSpacing>
@@ -17,7 +16,7 @@ const ParallaxImage = ({
           <IconButton
             style={style.actions.button}
             aria-label="Back"
-            onClick={goBack}
+            onClick={() => goBack()}
           >
             <ArrowBackIos />
           </IconButton>}
@@ -69,7 +68,8 @@ const style = {
     display: "block",
     textAlign: "left",
     top: "70%",
-    margin: '0 4vw 0 4vw'
+    margin: '0 4vw 0 4vw',
+    opacity: '0.9'
   },
 
   subtitle: {
