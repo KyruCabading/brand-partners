@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '@material-ui/core/Card'
-import CardActionArea from '@material-ui/core/CardActionArea'
+import { Link } from 'react-router-dom';
 import ParallaxImage from '../ParallaxImage'
 import Executions from '../Executions'
 import { Typography } from '@material-ui/core'
@@ -27,17 +27,16 @@ const style = {
 }
 
 export default ({
-  expanded = false,
-  showActions = false,
-  goBack = null,
   location
 }) => {
   const { outlet } = location.state
   return (
     <Card style={style.card}>
-      <ParallaxImage outlet={outlet} goBack={goBack} />
+      <ParallaxImage outlet={outlet} goBack={true} />
       <div style={style.section}>
         <Typography variant="body2">About the Outlet</Typography>
+        <Typography variant="body1">{outlet.about}</Typography>
+        <Typography variant="body1">{outlet.about}</Typography>
         <Typography variant="body1">{outlet.about}</Typography>
       </div>
       <div>

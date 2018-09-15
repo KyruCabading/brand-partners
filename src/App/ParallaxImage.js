@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardMedia, Typography, CardActions, IconButton } from '@material-ui/core/'
+import { CardMedia, Typography, CardActions, IconButton, CardActionArea } from '@material-ui/core/'
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos'
 
 import { Parallax, Background } from 'react-parallax'
@@ -62,7 +62,7 @@ const style = {
 
   card: {
     height: "55vw",
-    background: 'linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))'
+    background: 'linear-gradient(to top, rgba(5,5,5,1), rgba(0,0,0,0))'
   },
   header: {
     position: "relative",
@@ -77,7 +77,7 @@ const style = {
     color: 'rgb(100,100,100,0.8)',
   },
   background: {
-    width: "100vw"
+    width: "130vw"
   }
 }
 
