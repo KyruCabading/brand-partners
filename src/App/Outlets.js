@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import ParallaxImage from './ParallaxImage'
-import Sticky from 'react-sticky-el'
 
 import data from '../local/outlets.json'
 import logo from '../local/logo.png'
-import { Typography } from '@material-ui/core';
 
 class OutletsContainer extends Component {
   constructor(props) {
