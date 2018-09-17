@@ -6,7 +6,7 @@ const style = {
     position: "relative",
     display: "block",
     textAlign: "left",
-    margin: '4vw',
+    margin: '6vw 4vw',
     fontSize: '70%',
     letterSpacing: 0.5,
     fontWeight: 100,
@@ -18,6 +18,7 @@ export default props => {
   return (
     <div style={style.section}>
       <Typography variant="body2">{props.title}</Typography>
+      <Typography variant="body1">{props.content}</Typography>
       {props.children}
     </div>
   )

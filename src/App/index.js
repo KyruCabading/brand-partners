@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from "react-transition-group"
+import { Route } from 'react-router-dom';
 import { spring, AnimatedSwitch } from 'react-router-transition'
 import './style.css';
+
 import Outlets from './Outlets'
 import Details from './OutletDetails'
+
+import logo from '../local/logo.png'
 
 
 // we need to map the `scale` prop we define below
@@ -44,25 +46,47 @@ const bounceTransition = {
 
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      logoOpacity: 1
+    }
+  }
+
   componentWillReceiveProps() {
     this.previousView = this.props.location
   }
 
-
   render() {
     return (
       <React.Fragment>
-        <AnimatedSwitch
-          atEnter={bounceTransition.atEnter}
-          atLeave={bounceTransition.atLeave}
-          atActive={bounceTransition.atActive}
-          mapStyles={mapStyles}
-          className="switch-wrapper"
-        >
-          <Route exact path="/" component={Outlets} />
-          <Route exact path={`/outlet/:outletId`} component={Details} />
-          <Route render={() => <div>Not Found</div>} />
-        </AnimatedSwitch>
+        <Route render={({ location }) => {
+          return (
+            <React.Fragment>
+              <img
+                src={logo}
+                style={{
+                  display: location.pathname === '/' ? 'block' : 'none',
+                }}
+                className="logo"
+                alt="Winston Logo"></img>
+              <AnimatedSwitch
+                atEnter={bounceTransition.atEnter}
+                atLeave={bounceTransition.atLeave}
+                atActive={bounceTransition.atActive}
+                mapStyles={mapStyles}
+                className="switch-wrapper"
+              >
+                <Route exact path="/" component={Outlets} />
+                <Route exact path={`/outlet/:outletId`} render={(props) => (
+                  <Details {...props} toggleLogo={this.toggleLogo} />
+                )} />
+                <Route render={() => <div>Not Found</div>} />
+              </AnimatedSwitch>
+            </React.Fragment>
+          )
+        }} />
       </React.Fragment>
     )
   }

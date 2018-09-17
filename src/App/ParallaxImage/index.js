@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { CardMedia, Typography, CardActions, IconButton, CardActionArea } from '@material-ui/core/'
+import { CardMedia, Typography, CardActions, IconButton } from '@material-ui/core/'
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos'
 
 import { Parallax, Background } from 'react-parallax'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import bird from '../../local/logo-bird.png'
 
 const ParallaxImage = props => {
   const { outlet, goBack } = props
@@ -24,9 +24,15 @@ const ParallaxImage = props => {
       <div style={style.card}>
         <div style={style.header}>
           <Typography variant="title" >{outlet.name}</Typography>
-          <Typography variant="caption" style={style.subtitle}>
-            <FontAwesomeIcon icon={faMapMarkerAlt} /> {outlet.location}
-          </Typography>
+          <div style={style.subheader}>
+            <Typography variant="caption" style={style.subtitle}>
+              <FontAwesomeIcon icon={faMapMarkerAlt} /> {outlet.location}
+            </Typography>
+
+            {outlet.contract && <Typography variant="caption" style={style.subtitle}>
+              <img src={bird} style={{ margin: "0 1vw", opacity: "0.7", width: "5vw" }}></img> Exclusive
+            </Typography>}
+          </div>
         </div>
       </div>
       <Background >
@@ -63,19 +69,29 @@ const style = {
     height: "55vw",
     background: 'linear-gradient(to top, rgba(5,5,5,1), rgba(0,0,0,0))'
   },
+
   header: {
+    display: 'block',
     position: "relative",
-    display: "block",
-    textAlign: "left",
     top: "70%",
     margin: '0 4vw 0 4vw',
     opacity: '0.9'
+  },
+
+  subheader: {
+    display: 'flex',
+    justifyContent: 'space-between'
   },
 
   subtitle: {
     marginTop: 5,
     color: 'rgb(100,100,100,0.8)',
   },
+
+  exclusive: {
+
+  },
+
   background: {
     width: "130vw"
   }

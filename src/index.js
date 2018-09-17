@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import App from './App'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+
 import registerServiceWorker from './registerServiceWorker';
 import createBrowserHistory from 'history/createBrowserHistory'
 
@@ -20,13 +21,11 @@ const theme = createMuiTheme({
 })
 
 ReactDOM.render(
-  <BrowserRouter history={history}>
+  <Router history={history}>
     <MuiThemeProvider theme={theme}>
-
       <CssBaseline />
-
       <App />
     </MuiThemeProvider>
-  </BrowserRouter >
+  </Router >
   , document.getElementById('root'));
 registerServiceWorker();

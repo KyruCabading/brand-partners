@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import ParallaxImage from './ParallaxImage'
+import ParallaxImage from '../ParallaxImage'
+
+import { Typography } from '@material-ui/core'
 
 import data from '../local/outlets.json'
-import logo from '../local/logo.png'
 
 class OutletsContainer extends Component {
   constructor(props) {
@@ -29,7 +30,6 @@ class OutletsContainer extends Component {
     return outlets.map(outlet =>
       <Link
         key={outlet.id}
-        style={style.link}
         to={{
           pathname: `/outlet/${outlet.slug}`,
           state: {
@@ -49,12 +49,10 @@ class OutletsContainer extends Component {
     const { data } = this.state
     if (data) {
       return (
-        <div style={style.wrapper}>
-          <div style={style.header}>
-            <img src={logo} style={style.logo} alt="Winston Logo"></img>
-          </div>
+        <React.Fragment>
           {this.renderOutlets(data.outlets)}
-        </div>
+          <Typography variant="caption" className="gov-warning">Government Warning: Cigarette Smoking is dangerous to your health.</Typography>
+        </React.Fragment>
       )
     }
     return null
@@ -76,11 +74,6 @@ const style = {
 
   logo: {
     width: '30%'
-  },
-
-  link: {
-    textDecoration: 'none',
-    color: 'none'
   }
 }
 

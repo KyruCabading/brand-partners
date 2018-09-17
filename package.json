@@ -12,6 +12,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-headroom": "^2.2.2",
     "react-parallax": "^1.8.0",
     "react-pose": "^3.3.0",
     "react-router-dom": "^4.3.1",

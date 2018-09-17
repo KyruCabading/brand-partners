@@ -1,9 +1,9 @@
 import React from 'react'
-import Card from '@material-ui/core/Card'
 import ParallaxImage from '../ParallaxImage'
-import Executions from '../Executions'
-import { Typography } from '@material-ui/core'
+import { Card, Typography } from '@material-ui/core'
 import Section from '../Section'
+import SectionList from '../SectionList'
+import SectionCarousel from '../SectionCarousel'
 
 const style = {
   card: {
@@ -22,22 +22,35 @@ export default ({ location, history }) => {
     <div>
       <Card style={style.card}>
         <ParallaxImage outlet={outlet} goBack={history.goBack} />
-        <Section title="Categories">
-          <Typography variant="body1">{outlet.categories.join(', ')}</Typography>
-        </Section>
-        <Section title="Location">
-          <Typography variant="body1">{outlet.address}</Typography>
-        </Section>
-        <Section title="About the Outlet">
-          <Typography variant="body1">{outlet.about}</Typography>
-        </Section>
 
+        <Section
+          title="Location"
+          content={outlet.address} />
 
-        <Section>
-          <Typography variant="body2">Executions</Typography>
-        </Section>
-        <Executions outlet={outlet} />
+        <Section
+          title="About the Outlet"
+          content={outlet.about} />
 
+        <SectionList title="Primary Consumer Segments" listItems={outlet.segments} />
+
+        <SectionCarousel
+          title="Branding"
+          images={outlet.execution.images}
+          listItems={outlet.execution.items} />
+
+        {outlet.training.images &&
+          <SectionCarousel
+            title="Training"
+            images={outlet.training.images}
+            listItems={outlet.execution.items} />}
+
+        {outlet.contract &&
+          <Section title="Contract Details">
+            <Typography variant="body1">Start:</Typography>
+            <Typography variant="body1">End:</Typography>
+          </Section>}
+
+        <Typography variant="caption" className="gov-warning">Government Warning: Cigarette Smoking is dangerous to your health.</Typography>
       </Card>
     </div>
   )

@@ -1,16 +1,16 @@
 import React from 'react'
 import SwipeableViews from 'react-swipeable-views'
 
-const Executions = props => {
-  const { outlet } = props
+const ImageCarousel = props => {
+  const { images } = props
+  console.log(images)
   return (
     <SwipeableViews>
-      <div style={style.container}>
-        <img style={style.background} src={outlet.image} alt={outlet.name} />
-      </div>
-      <div style={style.container}>
-        <img style={style.background} src={outlet.image} alt={outlet.name} />
-      </div>
+      {images.map(image => (
+        <div key={image} style={style.container}>
+          <img style={style.background} src={image} />
+        </div>
+      ))}
     </SwipeableViews>
   )
 }
@@ -46,4 +46,4 @@ const style = {
   }
 }
 
-export default Executions
+export default ImageCarousel

@@ -6,9 +6,38 @@
       "id": 1,
       "name": "Stoned",
       "slug": "stoned",
+      "type": "Bar/ Pub",
+      "segments": [
+        "Happy-go-lucky Daydreamers",
+        "Traditional new Grown-ups",
+        "Ambitious Gonnabes"
+      ],
+      "contract": "Under exclusive contract till Jan 2019",
       "location": "Dr. A. Santos Avenue",
       "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fada82e527ef9eeaa1faed34043b425b&auto=format&fit=crop&w=1334&q=80",
       "address": "Sucat Street, Manila, Philippines",
+      "execution": {
+        "images": [
+          "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fada82e527ef9eeaa1faed34043b425b&auto=format&fit=crop&w=1334&q=80",
+          "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1504670482337-6863551c6f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=60383aeb54a3cbd56dcf5fe1753a01d8&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eebf1f844460b2b340c876eb14ee2861&auto=format&fit=crop&w=2378&q=80",
+          "https://images.unsplash.com/photo-1533138774580-446d56e3044d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0dd0b12179fefc39e796865e2283d1a&auto=format&fit=crop&w=1334&q=80"
+        ],
+        "items": [
+          "Neon Lighted Signage",
+          "Napkin Holders",
+          "Ceramic Ashtrays",
+          "Holographic Signage"
+        ]
+      },
+      "training": {
+        "images": [
+          "https://images.unsplash.com/photo-1512061942530-e6a4e9a5cf27?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70eb373cd3b687cd7fe6cf63cd7702d2&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1513663580958-665b7ef55d1b?ixlib=rb-0.3.5&s=a9b2518212c6d756fd90eaf3755cadc2&auto=format&fit=crop&w=800&q=60",
+          "https://images.unsplash.com/photo-1511421616335-5a9846f1afcb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=551f24604f54abc486c13ec8866ed8d3&auto=format&fit=crop&w=800&q=60"
+        ]
+      },
       "categories": [
         "Classic Cocktail Bar",
         "Drinking den",
@@ -20,9 +49,38 @@
       "id": 2,
       "name": "Lounge Lizard",
       "slug": "lounge-lizard",
+      "type": "Bar/ Pub",
+      "segments": [
+        "Happy-go-lucky Daydreamers",
+        "Traditional new Grown-ups",
+        "Ambitious Gonnabes"
+      ],
+      "contract": null,
       "location": "President's Avenue",
       "image": "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
       "address": "President's Avenue",
+      "execution": {
+        "images": [
+          "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fada82e527ef9eeaa1faed34043b425b&auto=format&fit=crop&w=1334&q=80",
+          "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1504670482337-6863551c6f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=60383aeb54a3cbd56dcf5fe1753a01d8&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eebf1f844460b2b340c876eb14ee2861&auto=format&fit=crop&w=2378&q=80",
+          "https://images.unsplash.com/photo-1533138774580-446d56e3044d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0dd0b12179fefc39e796865e2283d1a&auto=format&fit=crop&w=1334&q=80"
+        ],
+        "items": [
+          "Neon Lighted Signage",
+          "Napkin Holders",
+          "Ceramic Ashtrays",
+          "Holographic Signage"
+        ]
+      },
+      "training": {
+        "images": [
+          "https://images.unsplash.com/photo-1512061942530-e6a4e9a5cf27?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70eb373cd3b687cd7fe6cf63cd7702d2&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1513663580958-665b7ef55d1b?ixlib=rb-0.3.5&s=a9b2518212c6d756fd90eaf3755cadc2&auto=format&fit=crop&w=800&q=60",
+          "https://images.unsplash.com/photo-1511421616335-5a9846f1afcb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=551f24604f54abc486c13ec8866ed8d3&auto=format&fit=crop&w=800&q=60"
+        ]
+      },
       "categories": [
         "Classic Cocktail Bar",
         "Drinking den",
@@ -34,9 +92,38 @@
       "id": 3,
       "name": "Vapor Hookah Lounge",
       "slug": "vapor-hookah-lounge",
+      "type": "Bar/ Pub",
+      "segments": [
+        "Happy-go-lucky Daydreamers",
+        "Traditional new Grown-ups",
+        "Ambitious Gonnabes"
+      ],
       "location": "Aguirre Avenue",
+      "contract": "Under exclusive contract till December 2018",
       "image": "https://images.unsplash.com/photo-1504670482337-6863551c6f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=60383aeb54a3cbd56dcf5fe1753a01d8&auto=format&fit=crop&w=1650&q=80",
       "address": "Sucat Street, Manila, Philippines",
+      "execution": {
+        "images": [
+          "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fada82e527ef9eeaa1faed34043b425b&auto=format&fit=crop&w=1334&q=80",
+          "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1504670482337-6863551c6f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=60383aeb54a3cbd56dcf5fe1753a01d8&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eebf1f844460b2b340c876eb14ee2861&auto=format&fit=crop&w=2378&q=80",
+          "https://images.unsplash.com/photo-1533138774580-446d56e3044d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0dd0b12179fefc39e796865e2283d1a&auto=format&fit=crop&w=1334&q=80"
+        ],
+        "items": [
+          "Neon Lighted Signage",
+          "Napkin Holders",
+          "Ceramic Ashtrays",
+          "Holographic Signage"
+        ]
+      },
+      "training": {
+        "images": [
+          "https://images.unsplash.com/photo-1512061942530-e6a4e9a5cf27?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70eb373cd3b687cd7fe6cf63cd7702d2&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1513663580958-665b7ef55d1b?ixlib=rb-0.3.5&s=a9b2518212c6d756fd90eaf3755cadc2&auto=format&fit=crop&w=800&q=60",
+          "https://images.unsplash.com/photo-1511421616335-5a9846f1afcb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=551f24604f54abc486c13ec8866ed8d3&auto=format&fit=crop&w=800&q=60"
+        ]
+      },
       "categories": [
         "Classic Cocktail Bar",
         "Drinking den",
@@ -48,9 +135,38 @@
       "id": 4,
       "name": "Checkpoint",
       "slug": "checkpoint",
+      "type": "Bar/ Pub",
+      "segments": [
+        "Pragmatic Providers",
+        "Responsible Family Men",
+        "Happy-go-lucky Daydreamers"
+      ],
       "location": "Aguirre Avenue",
+      "contract": "Under exclusive contract till June 2020",
       "image": "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eebf1f844460b2b340c876eb14ee2861&auto=format&fit=crop&w=2378&q=80",
       "address": "Sucat Street, Manila, Philippines",
+      "execution": {
+        "images": [
+          "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fada82e527ef9eeaa1faed34043b425b&auto=format&fit=crop&w=1334&q=80",
+          "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1504670482337-6863551c6f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=60383aeb54a3cbd56dcf5fe1753a01d8&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eebf1f844460b2b340c876eb14ee2861&auto=format&fit=crop&w=2378&q=80",
+          "https://images.unsplash.com/photo-1533138774580-446d56e3044d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0dd0b12179fefc39e796865e2283d1a&auto=format&fit=crop&w=1334&q=80"
+        ],
+        "items": [
+          "Neon Lighted Signage",
+          "Napkin Holders",
+          "Ceramic Ashtrays",
+          "Holographic Signage"
+        ]
+      },
+      "training": {
+        "images": [
+          "https://images.unsplash.com/photo-1512061942530-e6a4e9a5cf27?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70eb373cd3b687cd7fe6cf63cd7702d2&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1513663580958-665b7ef55d1b?ixlib=rb-0.3.5&s=a9b2518212c6d756fd90eaf3755cadc2&auto=format&fit=crop&w=800&q=60",
+          "https://images.unsplash.com/photo-1511421616335-5a9846f1afcb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=551f24604f54abc486c13ec8866ed8d3&auto=format&fit=crop&w=800&q=60"
+        ]
+      },
       "categories": [
         "Classic Cocktail Bar",
         "Drinking den",
@@ -62,9 +178,40 @@
       "id": 5,
       "name": "Ribshack",
       "slug": "ribshack",
+      "type": "Bar/ Pub",
+      "segments": [
+        "Happy-go-lucky Daydreamers",
+        "Traditional new Grown-ups",
+        "Pragmatic Providers",
+        "Ambitious Gonnabes",
+        "Responsible Family Men"
+      ],
+      "contract": null,
       "location": "President's Avenue",
       "image": "https://images.unsplash.com/photo-1533138774580-446d56e3044d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0dd0b12179fefc39e796865e2283d1a&auto=format&fit=crop&w=1334&q=80",
       "address": "President's Avenue",
+      "execution": {
+        "images": [
+          "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fada82e527ef9eeaa1faed34043b425b&auto=format&fit=crop&w=1334&q=80",
+          "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1504670482337-6863551c6f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=60383aeb54a3cbd56dcf5fe1753a01d8&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eebf1f844460b2b340c876eb14ee2861&auto=format&fit=crop&w=2378&q=80",
+          "https://images.unsplash.com/photo-1533138774580-446d56e3044d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0dd0b12179fefc39e796865e2283d1a&auto=format&fit=crop&w=1334&q=80"
+        ],
+        "items": [
+          "Neon Lighted Signage",
+          "Napkin Holders",
+          "Ceramic Ashtrays",
+          "Holographic Signage"
+        ]
+      },
+      "training": {
+        "images": [
+          "https://images.unsplash.com/photo-1512061942530-e6a4e9a5cf27?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70eb373cd3b687cd7fe6cf63cd7702d2&auto=format&fit=crop&w=1650&q=80",
+          "https://images.unsplash.com/photo-1513663580958-665b7ef55d1b?ixlib=rb-0.3.5&s=a9b2518212c6d756fd90eaf3755cadc2&auto=format&fit=crop&w=800&q=60",
+          "https://images.unsplash.com/photo-1511421616335-5a9846f1afcb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=551f24604f54abc486c13ec8866ed8d3&auto=format&fit=crop&w=800&q=60"
+        ]
+      },
       "categories": [
         "Classic Cocktail Bar",
         "Drinking den",
