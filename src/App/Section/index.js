@@ -2,6 +2,9 @@ import React from 'react'
 import { Typography } from '@material-ui/core'
 
 const style = {
+  heading: {
+    fontSize: '15px'
+  },
   section: {
     position: "relative",
     display: "block",
@@ -17,8 +20,8 @@ const style = {
 export default props => {
   return (
     <div style={style.section}>
-      <Typography variant="body2">{props.title}</Typography>
-      <Typography variant="body1">{props.content}</Typography>
+      <Typography style={style.heading} variant="title">{props.title}</Typography>
+      <Typography>{props.content}</Typography>
       {props.children}
     </div>
   )

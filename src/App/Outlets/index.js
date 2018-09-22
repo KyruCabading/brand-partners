@@ -51,7 +51,12 @@ class OutletsContainer extends Component {
       return (
         <React.Fragment>
           {this.renderOutlets(data.outlets)}
-          <Typography variant="caption" className="gov-warning">Government Warning: Cigarette Smoking is dangerous to your health.</Typography>
+          <Typography variant="caption" className="gov-warning">
+            <div>.</div>
+            Government Warning:
+            <div>Cigarette Smoking is dangerous to your health.</div>
+            <div>.</div>
+          </Typography>
         </React.Fragment>
       )
     }

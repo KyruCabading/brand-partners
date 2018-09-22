@@ -31,6 +31,14 @@ export default ({ location, history }) => {
           title="About the Outlet"
           content={outlet.about} />
 
+        <Section
+          title="Reams per month"
+          content="10 Reams" />
+
+        <Section
+          title="Foot traffic"
+          content="300+ per night" />
+
         <SectionList title="Primary Consumer Segments" listItems={outlet.segments} />
 
         <SectionCarousel
@@ -42,15 +50,19 @@ export default ({ location, history }) => {
           <SectionCarousel
             title="Training"
             images={outlet.training.images}
-            listItems={outlet.execution.items} />}
+            listItems={outlet.training.items} />}
 
         {outlet.contract &&
-          <Section title="Contract Details">
-            <Typography variant="body1">Start:</Typography>
-            <Typography variant="body1">End:</Typography>
-          </Section>}
+          <Section
+            title="Contract Details"
+            content={outlet.contract} />}
 
-        <Typography variant="caption" className="gov-warning">Government Warning: Cigarette Smoking is dangerous to your health.</Typography>
+        <Typography variant="caption" className="gov-warning">
+          <div>.</div>
+          Government Warning:
+          <div>Cigarette Smoking is dangerous to your health.</div>
+          <div>.</div>
+        </Typography>
       </Card>
     </div>
   )

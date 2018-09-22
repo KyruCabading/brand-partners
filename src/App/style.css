@@ -10,7 +10,7 @@ a:link {
 }
 
 body {
-  background-color: rgb(10,10,10);
+  background-color: rgb(15,15,15);
 }
 
 .switch-wrapper {
@@ -35,6 +35,18 @@ body {
   width: 100%;
   opacity: 0.3;
   text-align: center;
+  background: rgb(15,15,15);
+}
+
+.swipeable::after {
+  display: block;
+  position: relative;
+  left: 90vw;
+  background-image: linear-gradient(to right, rgba(0,0,0,0),  rgba(5,5,5,0.9));
+  margin-top: -50vw;
+  height: 50vw;
+  width: 10vw;
+  content: '';
 }
 
 
