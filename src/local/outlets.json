@@ -48,7 +48,44 @@
         "Drinking den",
         "Late Night"
       ],
-      "about": "Here at Ribshack we serve our premium ribs covered with our secret recipe rub then slow smoked for 4-6 hours over hardwood oak and apple woods to ‘melt-in-your-mouth’ perfection."
+      "about": "Here at Ribshack we serve our premium ribs covered with our secret recipe rub then slow smoked for 4-6 hours over hardwood oak and apple woods to ‘melt-in-your-mouth’ perfection.",
+      "data": [
+        {
+          "name": "01/10",
+          "Barhop": 90,
+          "Outlet": 27
+        },
+        {
+          "name": "02/10",
+          "Barhop": 98,
+          "Outlet": 35
+        },
+        {
+          "name": "03/10",
+          "Barhop": 95,
+          "Outlet": 28
+        },
+        {
+          "name": "04/10",
+          "Barhop": 90,
+          "Outlet": 35
+        },
+        {
+          "name": "05/10",
+          "Barhop": 102,
+          "Outlet": 50
+        },
+        {
+          "name": "06/10",
+          "Barhop": 120,
+          "Outlet": 65
+        },
+        {
+          "name": "07/10",
+          "Barhop": 132,
+          "Outlet": 43
+        }
+      ]
     },
     {
       "id": 2,

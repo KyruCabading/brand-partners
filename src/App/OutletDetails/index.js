@@ -4,6 +4,9 @@ import { Card, Typography } from '@material-ui/core'
 import Section from '../Section'
 import SectionList from '../SectionList'
 import SectionCarousel from '../SectionCarousel'
+import SectionTable from '../SectionTable'
+import Chart from '../Chart';
+
 
 const style = {
   card: {
@@ -56,6 +59,17 @@ export default ({ location, history }) => {
           <Section
             title="Contract Details"
             content={outlet.contract} />}
+
+        {outlet.data &&
+          <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
+            <Section
+              title="Reams per month"
+              content="Volume: 250 monthly" />
+            <Chart
+              data={outlet.data} />
+          </div>
+        }
+        <SectionTable />
 
         <Typography variant="caption" className="gov-warning">
           <div>.</div>
