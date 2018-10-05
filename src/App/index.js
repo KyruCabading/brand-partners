@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import { IconButton } from '@material-ui/core/'
 import InsertChart from '@material-ui/icons/InsertChart'
 import { Route } from 'react-router-dom';
@@ -8,6 +9,7 @@ import './style.css';
 
 import Outlets from './Outlets'
 import Details from './OutletDetails'
+import AreaDetails from './AreaDetails'
 
 import logo from '../local/logo.png'
 
@@ -79,13 +81,15 @@ class App extends Component {
                 style={{
                   display: location.pathname === '/' ? 'block' : 'none',
                 }}>
-                <IconButton
-                  className="chart-icon"
-                  style={style.actions.button}
-                  aria-label="Data"
-                >
-                  <InsertChart />
-                </IconButton>
+                <Link to="/area">
+                  <IconButton
+                    className="chart-icon"
+                    style={style.actions.button}
+                    aria-label="Data"
+                  >
+                    <InsertChart />
+                  </IconButton>
+                </Link>
                 <img
                   className="logo"
                   src={logo}
@@ -101,6 +105,9 @@ class App extends Component {
                 <Route exact path="/" component={Outlets} />
                 <Route exact path={`/outlet/:outletId`} render={(props) => (
                   <Details {...props} toggleLogo={this.toggleLogo} />
+                )} />
+                <Route exact path={`/area`} render={(props) => (
+                  <AreaDetails {...props} toggleLogo={this.toggleLogo} />
                 )} />
                 <Route render={() => <div>Not Found</div>} />
               </AnimatedSwitch>
