@@ -37,7 +37,7 @@ html, body {
 .chart-icon {
   color: white;
   position: fixed;
-  right: 3%;
+  left: 3%;
   width: 100%;
   top: 2vw;
   z-index: 100;
