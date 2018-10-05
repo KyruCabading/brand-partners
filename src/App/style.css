@@ -37,9 +37,9 @@ html, body {
 .chart-icon {
   color: white;
   position: fixed;
+  right: 3%;
   width: 100%;
-  top: 3vw;
-  transform: translateX(90%);
+  top: 2vw;
   z-index: 100;
 }
 

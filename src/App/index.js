@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Typography } from '@material-ui/core/'
+import { IconButton } from '@material-ui/core/'
+import InsertChart from '@material-ui/icons/InsertChart'
 import { Route } from 'react-router-dom';
 import { spring, AnimatedSwitch } from 'react-router-transition'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartBar } from '@fortawesome/free-solid-svg-icons'
 
 import './style.css';
 
@@ -48,6 +47,16 @@ const bounceTransition = {
   },
 };
 
+const style = {
+  actions: {
+    button: {
+      color: 'white',
+      width: 60,
+      height: 60,
+      position: 'fixed',
+    }
+  }
+}
 
 class App extends Component {
   constructor(props) {
@@ -72,9 +81,13 @@ class App extends Component {
                 style={{
                   display: location.pathname === '/' ? 'block' : 'none',
                 }}>
-                <Typography variant="title" className="chart-icon">
-                  <FontAwesomeIcon icon={faChartBar} />
-                </Typography>
+                <IconButton
+                  className="chart-icon"
+                  style={style.actions.button}
+                  aria-label="Data"
+                >
+                  <InsertChart />
+                </IconButton>
                 <img
                   className="logo"
                   src={logo}
