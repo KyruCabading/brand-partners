@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { Typography } from '@material-ui/core/'
 import { Route } from 'react-router-dom';
 import { spring, AnimatedSwitch } from 'react-router-transition'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChartBar } from '@fortawesome/free-solid-svg-icons'
+
 import './style.css';
 
 import Outlets from './Outlets'
@@ -64,13 +68,18 @@ class App extends Component {
         <Route render={({ location }) => {
           return (
             <React.Fragment>
-              <img
-                src={logo}
+              <div
                 style={{
                   display: location.pathname === '/' ? 'block' : 'none',
-                }}
-                className="logo"
-                alt="Winston Logo"></img>
+                }}>
+                <Typography variant="title" className="chart-icon">
+                  <FontAwesomeIcon icon={faChartBar} />
+                </Typography>
+                <img
+                  className="logo"
+                  src={logo}
+                  alt="Winston Logo"></img>
+              </div>
               <AnimatedSwitch
                 atEnter={bounceTransition.atEnter}
                 atLeave={bounceTransition.atLeave}

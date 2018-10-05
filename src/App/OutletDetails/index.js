@@ -63,7 +63,7 @@ export default ({ location, history }) => {
         {outlet.data &&
           <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
             <Section
-              title="Reams per month"
+              title="Barhop Data"
               content="Volume: 250 monthly" />
             <Chart
               data={outlet.data} />
