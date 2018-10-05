@@ -51,9 +51,7 @@ const style = {
   actions: {
     button: {
       color: 'white',
-      width: 60,
-      height: 60,
-      position: 'fixed',
+      position: 'fixed'
     }
   }
 }

@@ -37,10 +37,10 @@ html, body {
 .chart-icon {
   color: white;
   position: fixed;
-  left: 3%;
-  width: 100%;
-  top: 2vw;
+  left: 50%;
+  bottom: 2vw;
   z-index: 100;
+  transform: translateX(-50%);
 }
 
 .gov-warning {
