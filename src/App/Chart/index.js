@@ -38,8 +38,8 @@ class Chart extends Component {
           <ReferenceLine y={90} strokeDasharray="5 5" stroke="#48bcff" />
           <ReferenceLine y={25} strokeDasharray="5 5" stroke="#8a6bde" />
 
-          <Area type="linear" dataKey="Barhop" stroke="#48bcff" fillOpacity={1} fill="url(#colorUv)" />
-          <Area type="linear" dataKey="Outlet" stroke="#8a6bde" fillOpacity={1} fill="url(#colorPv)" />
+          <Area type="linear" name={this.props.y1Name} dataKey={this.props.y1} stroke="#48bcff" fillOpacity={1} fill="url(#colorUv)" />
+          <Area type="linear" name={this.props.y2Name} dataKey={this.props.y2} stroke="#8a6bde" fillOpacity={1} fill="url(#colorPv)" />
         </AreaChart>
       </ResponsiveContainer>
     )

@@ -3,7 +3,6 @@ import SwipeableViews from 'react-swipeable-views'
 
 const ImageCarousel = props => {
   const { images } = props
-  console.log(images)
   return (
     <div className="swipeable">
       <SwipeableViews>

@@ -3,8 +3,10 @@ import { Card, Typography, IconButton } from '@material-ui/core/'
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos'
 
 import Section from '../Section'
+import StackedChart from '../Chart/StackedChart'
+import Chart from '../Chart'
 
-
+import data from '../../local/area.json'
 
 const style = {
     actions: {
@@ -29,7 +31,6 @@ const style = {
 
 export default ({ location, history }) => {
     const { goBack } = history
-
     window.scrollTo(0, 0)
     return (
         <div>
@@ -44,88 +45,35 @@ export default ({ location, history }) => {
                     </IconButton>}
 
                 <Section
-                    title="Packs Sold per Month"
+                    title="Barhop Activations"
+                    content="Barhop activations happen every weekend for Winston partner outlets."
                 />
-                <Section
-                    title="Sales"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
-                <Section
-                    title="South GMA"
-                />
+                <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
+                    <Section
+                        title="Packs Sold per Run"
+                        content="Average: 120"
+                    />
+                    <StackedChart data={data} x="run" lineA="Red" lineB="Blue" />
+                </div>
+                <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
+                    <Section title="KPIs">
+                        <Typography>
+                            Smoker Contact purchase rate: 23.1% <br />
+                        </Typography>
+                    </Section>
+                    <Chart
+                        data={data}
+                        y1Name="Customer Count"
+                        y2Name="Unique Trialist"
+                        y1="customerCount"
+                        y2="uniqueTrialist"
+                    />
+                </div>
 
                 <Typography variant="caption" className="gov-warning">
                     <div>.</div>
                     Government Warning:
-          <div>Cigarette Smoking is dangerous to your health.</div>
+                    <div>Cigarette Smoking is dangerous to your health.</div>
                     <div>.</div>
                 </Typography>
             </Card>

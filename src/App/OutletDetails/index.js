@@ -66,7 +66,10 @@ export default ({ location, history }) => {
               title="Barhop Data"
               content="Volume: 250 monthly" />
             <Chart
-              data={outlet.data} />
+              data={outlet.data}
+              y1="Barhop"
+              y2="Outlet"
+            />
           </div>
         }
         <SectionTable />
