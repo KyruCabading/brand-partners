@@ -19,12 +19,12 @@ class Chart extends Component {
           <Legend verticalAlign="top" height={36} wrapperStyle={styles.legend} />
           <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#48bcff" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#48bcff" stopOpacity={0} />
+              <stop offset="5%" stopColor="#03daff" />
+              <stop offset="95%" stopColor="#6b57ff" />
             </linearGradient>
             <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#8a6bde" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#8a6bde" stopOpacity={0} />
+              <stop offset="5%" stopColor="#ff4e98" />
+              <stop offset="95%" stopColor="#ff4245" />
             </linearGradient>
           </defs>
           <XAxis dataKey="name" axisLine={false} tickLine={false} style={styles.axis} />
@@ -35,11 +35,9 @@ class Chart extends Component {
             itemStyle={styles.axis}
             labelStyle={styles.axis}
             cursor={false} />
-          <ReferenceLine y={90} strokeDasharray="5 5" stroke="#48bcff" />
-          <ReferenceLine y={25} strokeDasharray="5 5" stroke="#8a6bde" />
 
-          <Area type="linear" name={this.props.y1Name} dataKey={this.props.y1} stroke="#48bcff" fillOpacity={1} fill="url(#colorUv)" />
-          <Area type="linear" name={this.props.y2Name} dataKey={this.props.y2} stroke="#8a6bde" fillOpacity={1} fill="url(#colorPv)" />
+          <Area type="linear" name={this.props.y1Name} dataKey={this.props.y1} stroke="#03daff" fillOpacity={1} fill="url(#colorUv)" />
+          <Area type="linear" name={this.props.y2Name} dataKey={this.props.y2} stroke="#ff4245" fillOpacity={1} fill="url(#colorPv)" />
         </AreaChart>
       </ResponsiveContainer>
     )

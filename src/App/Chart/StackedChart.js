@@ -40,7 +40,6 @@ class StackedChart extends Component {
               <stop offset="95%" stopColor="#019fd0" />
             </linearGradient>
           </defs>
-          <ReferenceLine y={120} strokeDasharray="5 5" stroke="#fff" />
           <XAxis dataKey="run" axisLine={false} tickLine={false} style={styles.axis} />
           <YAxis axisLine={false} tickLine={false} orientation="right" style={styles.axis} />
           <CartesianGrid strokeDasharray="0.5 5" vertical={false} style={{ opacity: 0.3 }} />
