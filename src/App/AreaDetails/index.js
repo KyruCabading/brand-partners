@@ -7,6 +7,7 @@ import StackedChart from '../Chart/StackedChart'
 import Chart from '../Chart'
 
 import data from '../../local/area.json'
+import kpis from '../../local/kpis.json'
 
 const style = {
     actions: {
@@ -45,8 +46,8 @@ export default ({ location, history }) => {
                     </IconButton>}
 
                 <Section
-                    title="Barhop Activations"
-                    content="Barhop activations happen every weekend for Winston partner outlets."
+                    title="Barhop Activations Data"
+                    content="Barhop activations are done every weekend for Winston partner outlets in SGMA."
                 />
                 <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
                     <Section
@@ -63,10 +64,13 @@ export default ({ location, history }) => {
                     </Section>
                     <Chart
                         data={data}
+                        dataName="run"
                         y1Name="Customer Count"
                         y2Name="Unique Trialist"
+                        y3Name="Smoker Contacts"
                         y1="customerCount"
                         y2="uniqueTrialist"
+                        y3="smokerContacts"
                     />
                 </div>
 

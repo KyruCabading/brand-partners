@@ -20,7 +20,31 @@ const style = {
 
 export default ({ location, history }) => {
   const { outlet } = location.state
+
+  // Contract Mess
+  const startOfContract = outlet.contract && outlet.contract.start
+  const endOfContract = outlet.contract && outlet.contract.end
+  const contractExists = outlet.contract && startOfContract !== "N/A"
+  const contract = <Typography>
+    Start: {startOfContract}
+    <br />
+    End: {endOfContract}
+  </Typography>
+
+  // Array of images
+  const getArrayOfImages = (type = 'branding', numberOfImages = 0) => {
+    const arrayOfImages = []
+    for (var i = 1; i < numberOfImages + 1; i++) {
+      const imageUrl = `/photos/${outlet.slug}/${type}/${i}.jpg`
+      arrayOfImages.push(imageUrl)
+    }
+    return arrayOfImages
+  }
+  const brandingPhotos = getArrayOfImages('branding', outlet.execution.numberOfImages)
+  const trainingPhotos = getArrayOfImages('productTraining', outlet.training.numberOfImages)
+  console.log(trainingPhotos)
   window.scrollTo(0, 0)
+
   return (
     <div>
       <Card style={style.card}>
@@ -34,31 +58,31 @@ export default ({ location, history }) => {
           title="About the Outlet"
           content={outlet.about} />
 
-        <Section
-          title="Reams per month"
-          content="10 Reams" />
-
-        <Section
-          title="Foot traffic"
-          content="300+ per night" />
-
         <SectionList title="Primary Consumer Segments" listItems={outlet.segments} />
 
         <SectionCarousel
           title="Branding"
-          images={outlet.execution.images}
+          images={brandingPhotos}
           listItems={outlet.execution.items} />
 
-        {outlet.training.images &&
+        {outlet.training.numberOfImages > 0 &&
           <SectionCarousel
             title="Training"
-            images={outlet.training.images}
+            images={trainingPhotos}
             listItems={outlet.training.items} />}
 
-        {outlet.contract &&
+        <Section
+          title="Foot traffic"
+          content={outlet.footTraffic} />
+
+        <Section
+          title="Reams per month"
+          content={outlet.volume} />
+
+        {contractExists &&
           <Section
             title="Contract Details"
-            content={outlet.contract} />}
+            content={contract} />}
 
         {outlet.data &&
           <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
@@ -72,7 +96,6 @@ export default ({ location, history }) => {
             />
           </div>
         }
-        <SectionTable />
 
         <Typography variant="caption" className="gov-warning">
           <div>.</div>

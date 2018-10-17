@@ -6,37 +6,30 @@
       "id": 1,
       "name": "Ribshack",
       "slug": "ribshack",
-      "type": "Bar/ Pub",
+      "type": "Restobar",
       "segments": [
+        "Ambitious Gonna Bes",
         "Happy-go-lucky Daydreamers",
-        "Traditional new Grown-ups",
         "Pragmatic Providers"
       ],
       "location": "President's Avenue",
-      "contract": "Under exclusive contract till June 2020",
+      "contract": {
+        "start": "16-Sep-2018",
+        "end": "16-Sep-2019"
+      },
       "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fada82e527ef9eeaa1faed34043b425b&auto=format&fit=crop&w=1334&q=80",
-      "address": "President's Avenue, BF Homes",
+      "address": "President's Avenue, BF Homes, Parañaque",
       "execution": {
-        "images": [
-          "/photos/branding/branding-1.jpg",
-          "/photos/branding/branding-2.jpg",
-          "/photos/branding/branding-3.jpg",
-          "/photos/branding/branding-4.jpg"
-        ],
+        "numberOfImages": 0,
         "items": [
-          "Neon Lighted Signage",
-          "Napkin Holders",
-          "Ceramic Ashtrays",
-          "Holographic Signage"
+          "Winston 3D Lighted Signage",
+          "Eagle Lighted Signage",
+          "Standing Ashtrays",
+          "Napkin Holders"
         ]
       },
       "training": {
-        "images": [
-          "/photos/training/training-1.jpg",
-          "/photos/training/training-2.jpg",
-          "/photos/training/training-3.jpg",
-          "/photos/training/training-4.jpg"
-        ],
+        "numberOfImages": 3,
         "items": [
           "Product Knowledge",
           "Tobacco Regulations",
@@ -48,7 +41,9 @@
         "Drinking den",
         "Late Night"
       ],
-      "about": "Here at Ribshack we serve our premium ribs covered with our secret recipe rub then slow smoked for 4-6 hours over hardwood oak and apple woods to ‘melt-in-your-mouth’ perfection.",
+      "about": "The decorative interior, crowd, and food options will surely overwhelm you at The Rib Shack in BF Homes. If you are in for a surprise, ask the staff to take you to the \"Stock Room\" and enjoy the humble, moody ambiance of their infamous \"hidden bar\" over a couple of cocktails.",
+      "volume": 4,
+      "footTraffic": "~80 per night",
       "data": [
         {
           "name": "01/10",
@@ -89,39 +84,35 @@
     },
     {
       "id": 2,
-      "name": "Lounge Lizard",
-      "slug": "lounge-lizard",
-      "type": "Bar/ Pub",
+      "name": "Nlos",
+      "slug": "nlos",
+      "type": "Restobar",
       "segments": [
         "Happy-go-lucky Daydreamers",
-        "Traditional new Grown-ups",
-        "Ambitious Gonnabes"
+        "Pragmatic Providers",
+        "Responsible Family Men"
       ],
-      "contract": "Under exclusive contract till June 2020",
-      "location": "President's Avenue",
-      "image": "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
-      "address": "President's Avenue, BF Homes",
+      "location": "Aguirre Avenue",
+      "contract": {
+        "start": "19-Jun-2018",
+        "end": "19-Dec-2018"
+      },
+      "image": "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eebf1f844460b2b340c876eb14ee2861&auto=format&fit=crop&w=2378&q=80",
+      "address": "Aguirre Avenue, BF Homes, Parañaque",
       "execution": {
-        "images": [
-          "/photos/branding/branding-1.jpg",
-          "/photos/branding/branding-2.jpg",
-          "/photos/branding/branding-3.jpg",
-          "/photos/branding/branding-4.jpg"
-        ],
         "items": [
           "Neon Lighted Signage",
-          "Napkin Holders",
-          "Ceramic Ashtrays",
-          "Holographic Signage"
-        ]
+          "Hologram Fan",
+          "Lighted Product Display",
+          "Parasols",
+          "Frosted Ashtrays",
+          "Standing Ashtrays",
+          "Napkin Holders"
+        ],
+        "numberOfImages": 7
       },
       "training": {
-        "images": [
-          "/photos/training/training-1.jpg",
-          "/photos/training/training-2.jpg",
-          "/photos/training/training-3.jpg",
-          "/photos/training/training-4.jpg"
-        ],
+        "numberOfImages": 3,
         "items": [
           "Product Knowledge",
           "Tobacco Regulations",
@@ -133,43 +124,39 @@
         "Drinking den",
         "Late Night"
       ],
-      "about": "With more than thirty cocktail combinations, this cozy bar is a BF Homes favourite. Whilst oft-brimming with students, this hangout boasts comfy couches, buckets of fries, and the doormen are legends."
+      "about": "Nlos’ reputation goes with its name as you can listen to talented entertainers five nights a week. It’s lively, colourful, and a great place for a night out with a big group.",
+      "volume": 10,
+      "footTraffic": "~150 per night"
     },
     {
       "id": 3,
-      "name": "Nlos",
-      "slug": "nlos",
-      "type": "Bar/ Pub",
+      "name": "Homework",
+      "slug": "homework",
+      "type": "Restobar",
       "segments": [
-        "Pragmatic Providers",
-        "Responsible Family Men",
-        "Happy-go-lucky Daydreamers"
+        "Ambitious Gonna Bes",
+        "Happy-go-lucky Daydreamers",
+        "Traditional new Grown-ups"
       ],
       "location": "Aguirre Avenue",
-      "contract": "Under exclusive contract till June 2020",
-      "image": "https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eebf1f844460b2b340c876eb14ee2861&auto=format&fit=crop&w=2378&q=80",
-      "address": "Sucat Street, Manila, Philippines",
+      "image": "https://images.unsplash.com/photo-1533138774580-446d56e3044d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0dd0b12179fefc39e796865e2283d1a&auto=format&fit=crop&w=1334&q=80",
+      "address": "Aguirre Avenue, BF Homes, Parañaque",
+      "contract": {
+        "start": "19-Jun-2018",
+        "end": "19-Dec-2019"
+      },
       "execution": {
-        "images": [
-          "/photos/branding/branding-1.jpg",
-          "/photos/branding/branding-2.jpg",
-          "/photos/branding/branding-3.jpg",
-          "/photos/branding/branding-4.jpg"
-        ],
         "items": [
+          "DJ's Booth",
           "Neon Lighted Signage",
-          "Napkin Holders",
-          "Ceramic Ashtrays",
-          "Holographic Signage"
-        ]
+          "Lighted Product Display",
+          "Frosted Ashtrays",
+          "Napkin Holders"
+        ],
+        "numberOfImages": 7
       },
       "training": {
-        "images": [
-          "/photos/training/training-1.jpg",
-          "/photos/training/training-2.jpg",
-          "/photos/training/training-3.jpg",
-          "/photos/training/training-4.jpg"
-        ],
+        "numberOfImages": 2,
         "items": [
           "Product Knowledge",
           "Tobacco Regulations",
@@ -181,43 +168,41 @@
         "Drinking den",
         "Late Night"
       ],
-      "about": "Nlos’ reputation goes with it’s name as you can listen to talented entertainers five nights a week. It’s lively, colourful, and a great place for a good night out with a big group."
+      "about": "This late-night spot in BF Homes pulls off the best possible vibes for students and yuppies around the block. With an exciting menu, beer pong, and cocktails, you’d be hard-pressed not to be impressed.",
+      "volume": 10,
+      "footTraffic": "~100 per night"
     },
     {
       "id": 4,
-      "name": "Homework",
-      "slug": "homework",
-      "type": "Bar/ Pub",
+      "name": "The Grill",
+      "slug": "the-grill",
+      "type": "Restobar",
       "segments": [
         "Happy-go-lucky Daydreamers",
-        "Traditional new Grown-ups",
-        "Ambitious Gonnabes"
+        "Pragmatic Providers",
+        "Responsible Family Men"
       ],
-      "contract": "Under exclusive contract till June 2020",
+      "contract": {
+        "start": "19-Jun-2018",
+        "end": "19-Jun-2019"
+      },
       "location": "Aguirre Avenue",
-      "image": "https://images.unsplash.com/photo-1533138774580-446d56e3044d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0dd0b12179fefc39e796865e2283d1a&auto=format&fit=crop&w=1334&q=80",
-      "address": "Sucat Street, Manila, Philippines",
+      "image": "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
+      "address": "Aguirre Avenue, BF Homes, Parañaque",
       "execution": {
-        "images": [
-          "/photos/branding/branding-1.jpg",
-          "/photos/branding/branding-2.jpg",
-          "/photos/branding/branding-3.jpg",
-          "/photos/branding/branding-4.jpg"
-        ],
+        "numberOfImages": 7,
         "items": [
-          "Neon Lighted Signage",
-          "Napkin Holders",
-          "Ceramic Ashtrays",
-          "Holographic Signage"
+          "Parasols",
+          "Hologram Fan",
+          "Eagle Lighted Signage",
+          "Lighted Product Display",
+          "Standing Ashtrays",
+          "Frosted Ashtrays",
+          "Napkin Holders"
         ]
       },
       "training": {
-        "images": [
-          "/photos/training/training-1.jpg",
-          "/photos/training/training-2.jpg",
-          "/photos/training/training-3.jpg",
-          "/photos/training/training-4.jpg"
-        ],
+        "numberOfImages": 3,
         "items": [
           "Product Knowledge",
           "Tobacco Regulations",
@@ -229,43 +214,41 @@
         "Drinking den",
         "Late Night"
       ],
-      "about": "This late-night spot in BF Homes pulls off the best possible vibes all under the watchful eye of a supervillain. With a melt-in-your-mouth-menu and cocktails we’d consider to be art forms, you’d be hard-pressed not to be impressed."
+      "about": "Serving fresh food grilled to perfection, The Grill offers a pleasurable dining experience and a wide variety of food ranging from Filipino favorites – Sisig, Crispy Pata, Beef Kare-kare to exotic cuisines.",
+      "volume": 8,
+      "footTraffic": "~100 per night"
     },
     {
       "id": 5,
       "name": "Mulligan's Overtime",
       "slug": "mulligans-overtime",
-      "type": "Bar/ Pub",
+      "type": "Sports Bar",
       "segments": [
         "Happy-go-lucky Daydreamers",
         "Traditional new Grown-ups",
         "Ambitious Gonnabes"
       ],
-      "contract": "Under exclusive contract till June 2020",
       "location": "Aguirre Avenue",
+      "contract": {
+        "start": "N/A",
+        "end": "N/A"
+      },
       "image": "https://images.unsplash.com/photo-1531947044935-8599a939ab85?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5304aaa84dc20afe85c352f538038bb1&auto=format&fit=crop&w=1400&q=60",
-      "address": "Sucat Street, Manila, Philippines",
+      "address": "Aguirre Avenue, BF Homes, Parañaque",
       "execution": {
-        "images": [
-          "/photos/branding/branding-1.jpg",
-          "/photos/branding/branding-2.jpg",
-          "/photos/branding/branding-3.jpg",
-          "/photos/branding/branding-4.jpg"
-        ],
+        "numberOfImages": 5,
         "items": [
-          "Neon Lighted Signage",
-          "Napkin Holders",
-          "Ceramic Ashtrays",
-          "Holographic Signage"
+          "Winston 3D Lighted Signage",
+          "Hologram Fan",
+          "Lighted Product Display",
+          "Parasols",
+          "Frosted Ashtrays",
+          "Standing Ashtrays",
+          "Napkin Holders"
         ]
       },
       "training": {
-        "images": [
-          "/photos/training/training-1.jpg",
-          "/photos/training/training-2.jpg",
-          "/photos/training/training-3.jpg",
-          "/photos/training/training-4.jpg"
-        ],
+        "numberOfImages": 2,
         "items": [
           "Product Knowledge",
           "Tobacco Regulations",
@@ -277,43 +260,36 @@
         "Drinking den",
         "Late Night"
       ],
-      "about": "Stoned is undoubtedly the sexiest thing since all other bars. You'll find all the usuals: great cocktails and plush pasted pinks. It's a ridiculously good spot by Sucat that's breathing some life back into between the Barbican and Shoreditch."
+      "about": "A great place to eat, drink and be merry. Catch a game, an Irish beer, or a delicious meal at the well-known Mulligan's Pub.",
+      "volume": 10,
+      "footTraffic": "~100 per night"
     },
     {
       "id": 6,
-      "name": "Checkpoint",
-      "slug": "checkpoint",
-      "type": "Bar/ Pub",
+      "name": "Noyski",
+      "slug": "noyski",
+      "type": "Restobar",
       "segments": [
+        "Happy-go-lucky Daydreamers",
         "Pragmatic Providers",
-        "Responsible Family Men",
-        "Happy-go-lucky Daydreamers"
+        "Responsible Family Men"
       ],
-      "location": "Aguirre Avenue",
-      "contract": "Under exclusive contract till June 2020",
-      "image": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ef83ecf505188d03ab8002e57706b285&auto=format&fit=crop&w=1567&q=80",
-      "address": "Sucat Street, Manila, Philippines",
+      "location": "BF Resort Village",
+      "image": "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
+      "address": "Gloria Diaz Street, BF Resort Village, Las Piñas",
       "execution": {
-        "images": [
-          "/photos/branding/branding-1.jpg",
-          "/photos/branding/branding-2.jpg",
-          "/photos/branding/branding-3.jpg",
-          "/photos/branding/branding-4.jpg"
-        ],
+        "numberOfImages": 6,
         "items": [
-          "Neon Lighted Signage",
-          "Napkin Holders",
-          "Ceramic Ashtrays",
-          "Holographic Signage"
+          "Winston 3D Lighted Signage",
+          "Lighted Product Display",
+          "Parasols",
+          "Frosted Ashtrays",
+          "Standing Ashtrays",
+          "Napkin Holders"
         ]
       },
       "training": {
-        "images": [
-          "/photos/training/training-1.jpg",
-          "/photos/training/training-2.jpg",
-          "/photos/training/training-3.jpg",
-          "/photos/training/training-4.jpg"
-        ],
+        "numberOfImages": 0,
         "items": [
           "Product Knowledge",
           "Tobacco Regulations",
@@ -325,43 +301,39 @@
         "Drinking den",
         "Late Night"
       ],
-      "about": "Stoned is undoubtedly the sexiest thing since all other bars. You'll find all the usuals: great cocktails and plush pasted pinks. It's a ridiculously good spot by Sucat that's breathing some life back into between the Barbican and Shoreditch."
+      "about": "Noyski is a beautiful celebration of things that Filipinos excel at - food and drinks! With its raggedly modern interiors we consider to be artsy, it is the perfect place to eat, drink, and chill.",
+      "volume": 8,
+      "footTraffic": "~100 per night"
     },
     {
       "id": 7,
-      "name": "Vapor Hookah Lounge",
-      "slug": "vapor-hookah-lounge",
-      "type": "Bar/ Pub",
+      "name": "The Quarry",
+      "slug": "the-quarry",
+      "type": "Beer Garden",
       "segments": [
         "Happy-go-lucky Daydreamers",
         "Traditional new Grown-ups",
-        "Ambitious Gonnabes"
+        "Responsible Family Men"
       ],
-      "location": "Aguirre Avenue",
-      "contract": "Under exclusive contract till June 2020",
-      "image": "https://images.unsplash.com/photo-1504670482337-6863551c6f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=60383aeb54a3cbd56dcf5fe1753a01d8&auto=format&fit=crop&w=1650&q=80",
-      "address": "Sucat Street, Manila, Philippines",
+      "contract": {
+        "start": "N/A",
+        "end": "N/A"
+      },
+      "location": "Alabang-Zapote Road",
+      "image": "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
+      "address": "Alabang-Zapote Rd., Almanza Uno, Las Piñas",
       "execution": {
-        "images": [
-          "/photos/branding/branding-1.jpg",
-          "/photos/branding/branding-2.jpg",
-          "/photos/branding/branding-3.jpg",
-          "/photos/branding/branding-4.jpg"
-        ],
+        "numberOfImages": 7,
         "items": [
-          "Neon Lighted Signage",
-          "Napkin Holders",
-          "Ceramic Ashtrays",
-          "Holographic Signage"
+          "Lighted Product Display",
+          "Parasols",
+          "Frosted Ashtrays",
+          "Standing Ashtrays",
+          "Napkin Holders"
         ]
       },
       "training": {
-        "images": [
-          "/photos/training/training-1.jpg",
-          "/photos/training/training-2.jpg",
-          "/photos/training/training-3.jpg",
-          "/photos/training/training-4.jpg"
-        ],
+        "numberOfImages": 0,
         "items": [
           "Product Knowledge",
           "Tobacco Regulations",
@@ -373,43 +345,40 @@
         "Drinking den",
         "Late Night"
       ],
-      "about": "Stoned is undoubtedly the sexiest thing since all other bars. You'll find all the usuals: great cocktails and plush pasted pinks. It's a ridiculously good spot by Sucat that's breathing some life back into between the Barbican and Shoreditch."
+      "about": "Arguably the best venue in Las Pinas to hear extremely talented, up-and-coming local rock bands. The Quarry offers afforable beer and finger food, perfect ingredients for an enjoyable music night with friends.",
+      "volume": 8,
+      "footTraffic": "~100 per night"
     },
     {
       "id": 8,
-      "name": "Mulligan's Main",
-      "slug": "mulligans-main",
-      "type": "Bar/ Pub",
+      "name": "Lounge Lizard",
+      "slug": "lounge-lizard",
+      "type": "Sports Bar",
       "segments": [
+        "Ambitious Gonna Bes",
         "Happy-go-lucky Daydreamers",
-        "Traditional new Grown-ups",
-        "Ambitious Gonnabes"
+        "Pragmatic Providers"
       ],
-      "contract": "Under exclusive contract till June 2020",
-      "location": "Aguirre Avenue",
-      "image": "https://images.unsplash.com/photo-1518463242637-5240a33bf297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ae1f75e6eb01a86b2c10f17085103d6&auto=format&fit=crop&w=1963&q=80",
-      "address": "Sucat Street, Manila, Philippines",
+      "contract": {
+        "start": "19-Jun-2018",
+        "end": "19-Jun-2019"
+      },
+      "location": "President's Avenue",
+      "image": "https://images.unsplash.com/photo-1517638851339-a711cfcf3279?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b7d3fd7313e179636c1189245a70534&auto=format&fit=crop&w=1650&q=80",
+      "address": "President's Avenue, BF Homes, Parañaque",
       "execution": {
-        "images": [
-          "/photos/branding/branding-1.jpg",
-          "/photos/branding/branding-2.jpg",
-          "/photos/branding/branding-3.jpg",
-          "/photos/branding/branding-4.jpg"
-        ],
+        "numberOfImages": 7,
         "items": [
-          "Neon Lighted Signage",
-          "Napkin Holders",
-          "Ceramic Ashtrays",
-          "Holographic Signage"
+          "DJ's Booth",
+          "Hanging Lamps",
+          "Taco Holder & Score Board",
+          "Eagle Lighted Signage",
+          "Lighted Product Display",
+          "Napkin Holders"
         ]
       },
       "training": {
-        "images": [
-          "/photos/training/training-1.jpg",
-          "/photos/training/training-2.jpg",
-          "/photos/training/training-3.jpg",
-          "/photos/training/training-4.jpg"
-        ],
+        "numberOfImages": 3,
         "items": [
           "Product Knowledge",
           "Tobacco Regulations",
@@ -421,7 +390,9 @@
         "Drinking den",
         "Late Night"
       ],
-      "about": "Stoned is undoubtedly the sexiest thing since all other bars. You'll find all the usuals: great cocktails and plush pasted pinks. It's a ridiculously good spot by Sucat that's breathing some life back into between the Barbican and Shoreditch."
+      "about": "With more than thirty cocktail combinations, this cozy bar is a BF Homes favourite. Whilst oft-brimming with students, this hangout boasts comfy couches, pool tables, and buckets of fries.",
+      "volume": 4,
+      "footTraffic": "~80 per night"
     }
   ]
 }

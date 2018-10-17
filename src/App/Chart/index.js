@@ -22,12 +22,18 @@ class Chart extends Component {
               <stop offset="5%" stopColor="#03daff" />
               <stop offset="95%" stopColor="#6b57ff" />
             </linearGradient>
+            {this.props.y3Name &&
+              <linearGradient id="caster" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#ffe082" />
+                <stop offset="95%" stopColor="#ff895d" />
+              </linearGradient>
+            }
             <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#ff4e98" />
               <stop offset="95%" stopColor="#ff4245" />
             </linearGradient>
           </defs>
-          <XAxis dataKey="name" axisLine={false} tickLine={false} style={styles.axis} />
+          <XAxis dataKey={this.props.dataName || "name"} axisLine={false} tickLine={false} style={styles.axis} />
           <YAxis axisLine={false} tickLine={false} orientation="right" style={styles.axis} />
           <CartesianGrid strokeDasharray="0.5 5" vertical={false} style={{ opacity: 0.3 }} />
           <Tooltip
@@ -37,7 +43,10 @@ class Chart extends Component {
             cursor={false} />
 
           <Area type="linear" name={this.props.y1Name} dataKey={this.props.y1} stroke="#03daff" fillOpacity={1} fill="url(#colorUv)" />
-          <Area type="linear" name={this.props.y2Name} dataKey={this.props.y2} stroke="#ff4245" fillOpacity={1} fill="url(#colorPv)" />
+          {this.props.y3Name &&
+            <Area type="linear" name={this.props.y3Name} dataKey={this.props.y3} stroke="#ff4245" fillOpacity={1} fill="url(#colorPv)" />
+          }
+          <Area type="linear" name={this.props.y2Name} dataKey={this.props.y2} stroke="#ffe082" fillOpacity={1} fill="url(#caster)" />
         </AreaChart>
       </ResponsiveContainer>
     )

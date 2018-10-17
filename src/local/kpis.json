@@ -1,0 +1,164 @@
+[
+  {
+    "name": "15-Jun",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.681818182,
+    "smokerPerNonSmoker": 0.239564428
+  },
+  {
+    "name": "16-Jun",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.569148936,
+    "smokerPerNonSmoker": 0.55952381
+  },
+  {
+    "name": "22-Jun",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.832298137,
+    "smokerPerNonSmoker": 0.566901408
+  },
+  {
+    "name": "23-Jun",
+    "packsSoldPerPurchase": 1.96969697,
+    "uniqueTrialistPerSmokerContact": 0.857142857,
+    "smokerPerNonSmoker": 1.054794521
+  },
+  {
+    "name": "29-Jun",
+    "packsSoldPerPurchase": 1.985714286,
+    "uniqueTrialistPerSmokerContact": 0.632047478,
+    "smokerPerNonSmoker": 0.757303371
+  },
+  {
+    "name": "30-Jun",
+    "packsSoldPerPurchase": 1.931034483,
+    "uniqueTrialistPerSmokerContact": 0.784530387,
+    "smokerPerNonSmoker": 0.501385042
+  },
+  {
+    "name": "06-Jul",
+    "packsSoldPerPurchase": 1.817073171,
+    "uniqueTrialistPerSmokerContact": 0.857664234,
+    "smokerPerNonSmoker": 0.922558923
+  },
+  {
+    "name": "07-Jul",
+    "packsSoldPerPurchase": 1.951219512,
+    "uniqueTrialistPerSmokerContact": 0.844202899,
+    "smokerPerNonSmoker": 1.014705882
+  },
+  {
+    "name": "13-Jul",
+    "packsSoldPerPurchase": 1.931034483,
+    "uniqueTrialistPerSmokerContact": 0.810699588,
+    "smokerPerNonSmoker": 0.665753425
+  },
+  {
+    "name": "14-Jul",
+    "packsSoldPerPurchase": 1.743243243,
+    "uniqueTrialistPerSmokerContact": 0.751798561,
+    "smokerPerNonSmoker": 0.700251889
+  },
+  {
+    "name": "15-Jul",
+    "packsSoldPerPurchase": 1.945454545,
+    "uniqueTrialistPerSmokerContact": 0.808510638,
+    "smokerPerNonSmoker": 1.226086957
+  },
+  {
+    "name": "26-Jul",
+    "packsSoldPerPurchase": 1.980392157,
+    "uniqueTrialistPerSmokerContact": 0.801916933,
+    "smokerPerNonSmoker": 1.49047619
+  },
+  {
+    "name": "27-Jul",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.816053512,
+    "smokerPerNonSmoker": 1.502512563
+  },
+  {
+    "name": "02-Aug",
+    "packsSoldPerPurchase": 1.975609756,
+    "uniqueTrialistPerSmokerContact": 0.84725537,
+    "smokerPerNonSmoker": 1.745833333
+  },
+  {
+    "name": "04-Aug",
+    "packsSoldPerPurchase": 1.981132075,
+    "uniqueTrialistPerSmokerContact": 0.778761062,
+    "smokerPerNonSmoker": 1.308880309
+  },
+  {
+    "name": "10-Aug",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.792332268,
+    "smokerPerNonSmoker": 1.541871921
+  },
+  {
+    "name": "17-Aug",
+    "packsSoldPerPurchase": 1.89010989,
+    "uniqueTrialistPerSmokerContact": 0.667638484,
+    "smokerPerNonSmoker": 1.72361809
+  },
+  {
+    "name": "18-Aug",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.711171662,
+    "smokerPerNonSmoker": 2.463087248
+  },
+  {
+    "name": "24-Aug",
+    "packsSoldPerPurchase": 1.981132075,
+    "uniqueTrialistPerSmokerContact": 0.636792453,
+    "smokerPerNonSmoker": 1.432432432
+  },
+  {
+    "name": "25-Aug",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.679518072,
+    "smokerPerNonSmoker": 1.930232558
+  },
+  {
+    "name": "31-Aug",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.678414097,
+    "smokerPerNonSmoker": 5.604938272
+  },
+  {
+    "name": "01-Sep",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.629526462,
+    "smokerPerNonSmoker": 1.508403361
+  },
+  {
+    "name": "07-Sep",
+    "packsSoldPerPurchase": 1.869565217,
+    "uniqueTrialistPerSmokerContact": 0.88337469,
+    "smokerPerNonSmoker": 1.791111111
+  },
+  {
+    "name": "08-Sep",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.947368421,
+    "smokerPerNonSmoker": 2.35862069
+  },
+  {
+    "name": "21-Sep",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.857142857,
+    "smokerPerNonSmoker": 1.338645418
+  },
+  {
+    "name": "22-Sep",
+    "packsSoldPerPurchase": 1.554545455,
+    "uniqueTrialistPerSmokerContact": 0.783050847,
+    "smokerPerNonSmoker": 1.391509434
+  },
+  {
+    "name": "29-Sep",
+    "packsSoldPerPurchase": 2,
+    "uniqueTrialistPerSmokerContact": 0.702312139,
+    "smokerPerNonSmoker": 1.840425532
+  }
+]
