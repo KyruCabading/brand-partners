@@ -39,7 +39,7 @@ const ParallaxImage = props => {
         <CardMedia
           component="img"
           style={style.background}
-          src={outlet.image}
+          src={`/photos/${outlet.slug}/cover.jpg`}
           title={outlet.name}
         >
         </CardMedia>
