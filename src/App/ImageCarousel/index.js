@@ -18,8 +18,7 @@ const ImageCarousel = props => {
 
 const style = {
   container: {
-    marginTop: "-25px",
-    height: "60vw",
+    height: "40vh",
     overflowY: 'hidden'
   },
 
