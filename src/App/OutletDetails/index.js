@@ -87,6 +87,7 @@ export default ({ location, history }) => {
           title="Foot traffic"
           content={outlet.footTraffic} />
 
+        {/* Start of Chart */}
         {true &&
           <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
             <Section
