@@ -26,10 +26,9 @@
     "serve": "^10.0.2"
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "yarn build"
+    "eject": "react-scripts eject"
   }
 }
