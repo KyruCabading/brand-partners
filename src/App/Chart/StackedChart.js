@@ -52,6 +52,9 @@ class StackedChart extends Component {
           <Bar type="linear" name="Blue" stackId="stack" dataKey="blue" fillOpacity={1} fill="url(#blue)" />
           <Bar type="linear" name="Caster" stackId="stack" dataKey="caster" fillOpacity={1} fill="url(#caster)" />
           <Bar type="linear" name="Menthol" stackId="stack" dataKey="menthol" fillOpacity={1} fill="url(#fm)" />
+          {this.props.referenceLine &&
+            <ReferenceLine y={this.props.referenceLine} stroke="white" strokeDasharray="5 5" />
+          }
         </BarChart>
       </ResponsiveContainer>
     )

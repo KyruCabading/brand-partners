@@ -7,7 +7,7 @@ import StackedChart from '../Chart/StackedChart'
 import Chart from '../Chart'
 
 import data from '../../local/area.json'
-import kpis from '../../local/kpis.json'
+import packsSold from '../../local/area-packsSold.json'
 
 const style = {
     actions: {
@@ -46,18 +46,31 @@ export default ({ location, history }) => {
                     </IconButton>}
 
                 <Section
-                    title="Barhop Activations Data"
-                    content="Barhop activations are done every weekend for Winston partner outlets in SGMA."
+                    title="Organic Winston Pack Sales"
+                    content="These are the Total Packs Sold within South GMA in the last 5 months."
+                />
+                <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
+                    <Chart
+                        data={packsSold}
+                        dataName="month"
+                        y1Name="Total Packs Sold"
+                        y1="totalPacksSold"
+                    />
+                </div>
+
+                <Section
+                    title="Caster 121 Activation Data"
+                    content="Caster 121 Activations are done every Friday & Saturday for Winston partner outlets in SGMA."
                 />
                 <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
                     <Section
-                        title="Packs Sold per Run"
-                        content="Average: 120"
+                        title="KPIs"
+                        content="Average Packs sold per run: 120"
                     />
-                    <StackedChart data={data} x="run" lineA="Red" lineB="Blue" />
+                    <StackedChart data={data} x="run" lineA="Red" lineB="Blue" referenceLine={68} referenceLineColor="white" />
                 </div>
                 <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
-                    <Section title="KPIs">
+                    <Section>
                         <Typography>
                             Smoker Contact purchase rate: 23.1% <br />
                         </Typography>
@@ -71,6 +84,10 @@ export default ({ location, history }) => {
                         y1="customerCount"
                         y2="uniqueTrialist"
                         y3="smokerContacts"
+                        referenceLine={300}
+                        referenceLineColor="red"
+                        referenceLine2={150}
+                        referenceLineColor2="#ffe082"
                     />
                 </div>
 

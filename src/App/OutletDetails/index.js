@@ -7,6 +7,7 @@ import SectionCarousel from '../SectionCarousel'
 import SectionTable from '../SectionTable'
 import Chart from '../Chart';
 
+import packsSold from '../../local/area-packsSold.json'
 
 const style = {
   card: {
@@ -42,7 +43,13 @@ export default ({ location, history }) => {
   }
   const brandingPhotos = getArrayOfImages('branding', outlet.execution.numberOfImages)
   const trainingPhotos = getArrayOfImages('productTraining', outlet.training.numberOfImages)
-  console.log(trainingPhotos)
+
+  const reamsSoldPerMonth = packsSold.map(month => {
+    const packsSold = month[outlet.slug]
+    return packsSold
+  })
+
+  const sumReamsSoldPerMonth = reamsSoldPerMonth.reduce((total, item) => { return total + item })
   window.scrollTo(0, 0)
 
   return (
@@ -71,28 +78,26 @@ export default ({ location, history }) => {
             images={trainingPhotos}
             listItems={outlet.training.items} />}
 
-        <Section
-          title="Foot traffic"
-          content={outlet.footTraffic} />
-
-        <Section
-          title="Reams per month"
-          content={outlet.volume} />
-
         {contractExists &&
           <Section
             title="Contract Details"
             content={contract} />}
 
-        {outlet.data &&
+        <Section
+          title="Foot traffic"
+          content={outlet.footTraffic} />
+
+        {true &&
           <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
             <Section
-              title="Barhop Data"
-              content="Volume: 250 monthly" />
+              title="Organic Sales"
+              content={`Total Packs Sold: ${sumReamsSoldPerMonth}`}
+            />
             <Chart
-              data={outlet.data}
-              y1="Barhop"
-              y2="Outlet"
+              data={packsSold}
+              dataName="month"
+              y1Name="Total Packs Sold"
+              y1={outlet.slug}
             />
           </div>
         }
