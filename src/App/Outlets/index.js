@@ -1,33 +1,32 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import ParallaxImage from '../ParallaxImage'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import ParallaxImage from "../ParallaxImage";
 
-import { Typography } from '@material-ui/core'
+import { Typography } from "@material-ui/core";
 
-import data from '../../local/outlets.json'
+import data from "../../local/outlets.json";
 
 class OutletsContainer extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
-      data: null
-    }
+      outlets: null
+    };
   }
 
   componentDidMount() {
-    this.fetchData().then(data => this.setState({ data }))
+    this.fetchData().then(data => this.setState({ outlets: data }));
   }
 
   fetchData = () => {
-    // Fetch Data from backend
-    return new Promise((resolve) => {
-      resolve(data)
-    })
-  }
+    return fetch("https://api.sheety.co/0155da19-ee61-4c7b-ac01-036da6631cfc")
+      .then(response => response.json())
+      .then(outlets => outlets);
+  };
 
   renderOutlets = outlets => {
-    return outlets.map(outlet =>
+    return outlets.map(outlet => (
       <Link
         key={outlet.id}
         to={{
@@ -37,20 +36,17 @@ class OutletsContainer extends Component {
           }
         }}
       >
-        <ParallaxImage
-          key={outlet.id}
-          outlet={outlet}
-        />
+        <ParallaxImage key={outlet.id} outlet={outlet} />
       </Link>
-    )
-  }
+    ));
+  };
 
   render() {
-    const { data } = this.state
-    if (data) {
+    const { outlets } = this.state;
+    if (outlets) {
       return (
         <React.Fragment>
-          {this.renderOutlets(data.outlets)}
+          {this.renderOutlets(outlets)}
           <Typography variant="caption" className="gov-warning">
             <div>.</div>
             Government Warning:
@@ -58,9 +54,9 @@ class OutletsContainer extends Component {
             <div>.</div>
           </Typography>
         </React.Fragment>
-      )
+      );
     }
-    return null
+    return null;
   }
 }
 
