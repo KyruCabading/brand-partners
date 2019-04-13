@@ -1,6 +1,6 @@
-import React from 'react'
-import Section from '../Section'
-import { List, ListItem, ListItemText } from '@material-ui/core'
+import React from "react";
+import Section from "../Section";
+import { List, ListItem, ListItemText } from "@material-ui/core";
 
 export default ({ title, listItems }) => {
   return (
@@ -11,9 +11,9 @@ export default ({ title, listItems }) => {
             <ListItem>
               <ListItemText primary={item} />
             </ListItem>
-          )
+          );
         })}
       </List>
     </Section>
-  )
-}
+  );
+};

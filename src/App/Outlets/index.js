@@ -4,25 +4,28 @@ import ParallaxImage from "../ParallaxImage";
 
 import { Typography } from "@material-ui/core";
 
-import data from "../../local/outlets.json";
-
 class OutletsContainer extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      outlets: null
+      outlets: null,
+      packsSold: null
     };
   }
 
   componentDidMount() {
-    this.fetchData().then(data => this.setState({ outlets: data }));
+    this.fetchData();
   }
 
   fetchData = () => {
-    return fetch("https://api.sheety.co/0155da19-ee61-4c7b-ac01-036da6631cfc")
+    fetch("https://api.sheety.co/f69fcf65-e2ef-4740-a6fd-bcc8a3133561")
       .then(response => response.json())
-      .then(outlets => outlets);
+      .then(packsSold => this.setState({ packsSold }));
+
+    fetch("https://api.sheety.co/627ab202-2874-49bc-acb6-36d44321d0ea")
+      .then(response => response.json())
+      .then(outlets => this.setState({ outlets }));
   };
 
   renderOutlets = outlets => {
@@ -32,7 +35,8 @@ class OutletsContainer extends Component {
         to={{
           pathname: `/outlet/${outlet.slug}`,
           state: {
-            outlet
+            outlet,
+            packsSold: this.state.packsSold
           }
         }}
       >
