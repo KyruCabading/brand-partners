@@ -36,7 +36,7 @@ class OutletsContainer extends Component {
           pathname: `/outlet/${outlet.slug}`,
           state: {
             outlet,
-            packsSold: this.state.packsSold
+            packsSold: this.props.packsSold
           }
         }}
       >
@@ -46,7 +46,7 @@ class OutletsContainer extends Component {
   };
 
   render() {
-    const { outlets } = this.state;
+    const { outlets } = this.props;
     if (outlets) {
       return (
         <React.Fragment>
