@@ -10,6 +10,7 @@ import "./style.css";
 import Outlets from "./Outlets";
 import Details from "./OutletDetails";
 import AreaDetails from "./AreaDetails";
+import Splash from "./Splash";
 
 import logo from "../local/logo.png";
 
@@ -64,7 +65,8 @@ class App extends Component {
     this.state = {
       logoOpacity: 1,
       outlets: [],
-      packsSold: []
+      packsSold: [],
+      delayed: true
     };
   }
 
@@ -74,6 +76,11 @@ class App extends Component {
 
   componentDidMount() {
     this.fetchData();
+    this.timer = setTimeout(() => this.setState({ delayed: false }), 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
   }
 
   fetchData = () => {
@@ -87,6 +94,9 @@ class App extends Component {
   };
 
   render() {
+    const { outlets, packsSold, delayed } = this.state;
+    const loading = delayed || outlets.length === 0 || packsSold.length === 0;
+
     return (
       <React.Fragment>
         <Route
@@ -95,7 +105,8 @@ class App extends Component {
               <React.Fragment>
                 <div
                   style={{
-                    display: location.pathname === "/" ? "block" : "none"
+                    display:
+                      location.pathname === "/" && !loading ? "block" : "none"
                   }}
                 >
                   <Link to="/area">
@@ -119,12 +130,18 @@ class App extends Component {
                   <Route
                     exact
                     path="/"
-                    render={props => (
-                      <Outlets
-                        outlets={this.state.outlets}
-                        packsSold={this.state.packsSold}
-                      />
-                    )}
+                    render={props => {
+                      if (loading) {
+                        return <Splash />;
+                      } else {
+                        return (
+                          <Outlets
+                            outlets={this.state.outlets}
+                            packsSold={this.state.packsSold}
+                          />
+                        );
+                      }
+                    }}
                   />
                   <Route
                     exact

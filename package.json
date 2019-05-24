@@ -12,6 +12,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-epic-spinners": "^0.3.0",
     "react-headroom": "^2.2.2",
     "react-map-gl": "^3.3.4",
     "react-parallax": "^1.8.0",

@@ -1,11 +1,6 @@
 {
-  "extends": [
-    "standard",
-    "plugin:flowtype/recommended"
-  ],
-  "plugins": [
-    "graphql"
-  ],
+  "extends": ["standard", "plugin:flowtype/recommended"],
+  "plugins": ["graphql"],
   "rules": {},
   "globals": {
     "fetch": false
