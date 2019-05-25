@@ -4,6 +4,7 @@ import { Card, Typography } from "@material-ui/core";
 import Section from "../Section";
 import SectionList from "../SectionList";
 import SectionCarousel from "../SectionCarousel";
+import SectionSwipeable from "../SectionSwipeable";
 import Chart from "../Chart";
 
 const style = {
@@ -44,7 +45,7 @@ export default ({ location, history }) => {
       <Card style={style.card}>
         <ParallaxImage outlet={outlet} goBack={history.goBack} />
 
-        <Section content={outlet.about} />
+        <SectionSwipeable content={outlet.about} />
 
         <SectionCarousel
           title="Branding"

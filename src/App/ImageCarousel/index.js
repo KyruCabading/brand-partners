@@ -5,7 +5,7 @@ const ImageCarousel = props => {
   const { images } = props;
   return (
     <div className="swipeable">
-      <SwipeableViews>
+      <SwipeableViews enableMouseEvents>
         {images.map(image => (
           <div key={image} style={style.container}>
             <img style={style.background} src={image} />
