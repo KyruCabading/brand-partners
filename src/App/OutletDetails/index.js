@@ -44,9 +44,7 @@ export default ({ location, history }) => {
       <Card style={style.card}>
         <ParallaxImage outlet={outlet} goBack={history.goBack} />
 
-        <Section title="Location" content={outlet.address} />
-
-        <Section title="About the Outlet" content={outlet.about} />
+        <Section title="Highlights" content={outlet.about} />
 
         <SectionList
           title="Primary Consumer Segments"
