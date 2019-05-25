@@ -44,12 +44,7 @@ export default ({ location, history }) => {
       <Card style={style.card}>
         <ParallaxImage outlet={outlet} goBack={history.goBack} />
 
-        <Section title="Highlights" content={outlet.about} />
-
-        <SectionList
-          title="Primary Consumer Segments"
-          listItems={getArrayFromString(outlet.segments)}
-        />
+        <Section content={outlet.about} />
 
         <SectionCarousel
           title="Branding"
@@ -64,6 +59,11 @@ export default ({ location, history }) => {
             listItems={getArrayFromString(outlet.trainingItems)}
           />
         )}
+
+        <SectionList
+          title="Primary Consumer Segments"
+          listItems={getArrayFromString(outlet.segments)}
+        />
 
         {outlet.contractStart && (
           <Section title="Contract Details" content={contract} />
