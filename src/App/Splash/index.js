@@ -19,8 +19,9 @@ const Splash = props => {
   return (
     <div className={classes.container}>
       <img
-        style={{ height: 300 }}
-        src="https://cdn.dribbble.com/users/1106178/screenshots/4175222/orb.gif"
+        className="animated fadeIn"
+        style={{ width: 250 }}
+        src={require("./smoke-loading.gif")}
       />
       <Typography variant="caption" className="animated fadeInStagger">
         Manus X Winston
