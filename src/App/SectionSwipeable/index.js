@@ -18,14 +18,17 @@ const style = {
 export default props => {
   const { content } = props;
   const contentArray = content.split(",");
+  console.log(contentArray);
   return (
     <SwipeableViews enableMouseEvents>
-      {contentArray.map(content => (
-        <div style={style.section}>
-          <Typography>{props.content}</Typography>
-          {props.children}
-        </div>
-      ))}
+      {contentArray.map((content, index) => {
+        return (
+          <div key={index} style={style.section}>
+            <Typography>{content.trim()}</Typography>
+            {props.children}
+          </div>
+        );
+      })}
     </SwipeableViews>
   );
 };
