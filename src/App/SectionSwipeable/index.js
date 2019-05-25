@@ -3,6 +3,9 @@ import { Typography } from "@material-ui/core";
 import SwipeableViews from "react-swipeable-views";
 
 const style = {
+  root: {
+    padding: "0 30px"
+  },
   section: {
     position: "relative",
     display: "block",
@@ -20,7 +23,7 @@ export default props => {
   const contentArray = content.split(",");
   console.log(contentArray);
   return (
-    <SwipeableViews enableMouseEvents>
+    <SwipeableViews style={style.root} enableMouseEvents>
       {contentArray.map((content, index) => {
         return (
           <div key={index} style={style.section}>
