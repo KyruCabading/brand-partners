@@ -1,8 +1,8 @@
-import React from 'react'
-import SwipeableViews from 'react-swipeable-views'
+import React from "react";
+import SwipeableViews from "react-swipeable-views";
 
 const ImageCarousel = props => {
-  const { images } = props
+  const { images } = props;
   return (
     <div className="swipeable">
       <SwipeableViews>
@@ -13,18 +13,18 @@ const ImageCarousel = props => {
         ))}
       </SwipeableViews>
     </div>
-  )
-}
+  );
+};
 
 const style = {
   container: {
-    height: "40vh",
-    overflowY: 'hidden'
+    height: "250px",
+    overflowY: "hidden"
   },
 
   background: {
     width: "100%"
   }
-}
+};
 
-export default ImageCarousel
+export default ImageCarousel;

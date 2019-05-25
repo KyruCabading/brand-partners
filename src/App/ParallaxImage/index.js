@@ -77,7 +77,7 @@ const style = {
   },
 
   card: {
-    height: "55vw",
+    height: "300px",
     background: "linear-gradient(to top, rgba(5,5,5,1), rgba(0,0,0,0))"
   },
 
