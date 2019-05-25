@@ -16,6 +16,7 @@ const styles = theme => ({
 const Splash = props => {
   const { classes } = props;
   let params = new URLSearchParams(location.search);
+  const name = params.get("name") || "";
   return (
     <div className={classes.container}>
       <img
@@ -24,7 +25,7 @@ const Splash = props => {
         src={require("./smoke-loading.gif")}
       />
       <Typography variant="caption" className="animated fadeInStagger">
-        Manus X Winston
+        {`Welcome` + name}
       </Typography>
     </div>
   );
