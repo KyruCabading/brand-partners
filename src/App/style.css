@@ -36,8 +36,8 @@ body {
 }
 
 .animated {
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -47,6 +47,9 @@ body {
     opacity: 0;
   }
   30% {
+    opacity: 1;
+  }
+  90% {
     opacity: 1;
   }
   100% {
@@ -61,12 +64,50 @@ body {
   30% {
     opacity: 1;
   }
+  90% {
+    opacity: 1;
+  }
   100% {
     opacity: 0;
   }
 }
 
 .fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInStagger {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInStagger {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeInStagger {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
