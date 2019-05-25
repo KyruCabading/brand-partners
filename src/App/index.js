@@ -76,7 +76,7 @@ class App extends Component {
 
   componentDidMount() {
     this.fetchData();
-    this.timer = setTimeout(() => this.setState({ delayed: false }), 5000);
+    this.timer = setTimeout(() => this.setState({ delayed: false }), 10000);
   }
 
   componentWillUnmount() {
