@@ -6,11 +6,12 @@ import { Typography } from "@material-ui/core";
 
 class OutletsContainer extends Component {
   renderOutlets = outlets => {
+    const { secret } = this.props;
     return outlets.map(outlet => (
       <Link
         key={outlet.id}
         to={{
-          pathname: `/outlet/${outlet.slug}`,
+          pathname: `/outlet/${outlet.slug}?secret=${secret}`,
           state: {
             outlet,
             packsSold: this.props.packsSold

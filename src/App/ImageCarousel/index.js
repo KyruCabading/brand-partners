@@ -21,7 +21,6 @@ const style = {
     height: "250px",
     overflowY: "hidden"
   },
-
   background: {
     width: "100%"
   }

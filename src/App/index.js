@@ -1,3 +1,4 @@
+/*eslint no-restricted-globals: 0*/
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { IconButton } from "@material-ui/core/";
@@ -11,6 +12,7 @@ import Outlets from "./Outlets";
 import Details from "./OutletDetails";
 import AreaDetails from "./AreaDetails";
 import Splash from "./Splash";
+import Restricted from "./Restricted";
 
 import logo from "../local/logo.png";
 
@@ -96,6 +98,12 @@ class App extends Component {
   render() {
     const { outlets, packsSold, delayed } = this.state;
     const loading = delayed || outlets.length === 0 || packsSold.length === 0;
+    const secret = new URLSearchParams(location.search).get("secret");
+    const isSecretValid = window.atob(secret).trim() === "ilovebabyjana";
+
+    if (!isSecretValid) {
+      return <Restricted />;
+    }
 
     return (
       <React.Fragment>
@@ -138,6 +146,7 @@ class App extends Component {
                           <Outlets
                             outlets={this.state.outlets}
                             packsSold={this.state.packsSold}
+                            secret={secret}
                           />
                         );
                       }

@@ -10,25 +10,25 @@ const styles = theme => ({
     height: "100vh",
     width: "100vw",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    color: "white",
+    padding: "20px"
   }
 });
-const Splash = props => {
+
+const Restricted = props => {
   const { classes } = props;
-  let params = new URLSearchParams(location.search);
-  const name = params.get("name") || "";
+
   return (
     <div className={classes.container}>
-      <img
-        className="animated fadeIn"
-        style={{ width: 250 }}
-        src={require("./smoke-loading.gif")}
-      />
-      <Typography variant="caption" className="animated fadeInStagger">
-        {`Welcome, ` + name + "."}
+      <Typography variant="title" align="center">
+        Sorry, you cannot access this page.
+      </Typography>
+      <Typography variant="title" align="center">
+        Please scan your QR code for access.
       </Typography>
     </div>
   );
 };
 
-export default withStyles(styles)(Splash);
+export default withStyles(styles)(Restricted);
