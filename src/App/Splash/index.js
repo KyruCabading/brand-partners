@@ -1,7 +1,6 @@
 /*eslint no-restricted-globals: 0*/
 import React from "react";
 import { withStyles, Typography } from "@material-ui/core";
-import Particles from "react-particles-js";
 
 const styles = theme => ({
   container: {
@@ -19,7 +18,10 @@ const Splash = props => {
   let params = new URLSearchParams(location.search);
   return (
     <div className={classes.container}>
-      <img src="https://cdn.dribbble.com/users/1106178/screenshots/4175222/orb.gif" />
+      <img
+        style={{ height: 300 }}
+        src="https://cdn.dribbble.com/users/1106178/screenshots/4175222/orb.gif"
+      />
       <Typography variant="caption" className="animated fadeInStagger">
         Manus X Winston
       </Typography>
