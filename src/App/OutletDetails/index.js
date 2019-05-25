@@ -90,12 +90,12 @@ export default ({ location, history }) => {
           </div>
         )}
 
-        {/* <Typography variant="caption" className="gov-warning">
+        <Typography variant="caption" className="gov-warning">
           <div>.</div>
           Government Warning:
           <div>Cigarette Smoking is dangerous to your health.</div>
           <div>.</div>
-        </Typography> */}
+        </Typography>
       </Card>
     </div>
   );
