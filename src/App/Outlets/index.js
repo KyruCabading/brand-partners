@@ -6,7 +6,6 @@ import { Typography } from "@material-ui/core";
 
 class OutletsContainer extends Component {
   renderOutlets = outlets => {
-    console.log(outlets);
     return outlets.map(outlet => (
       <Link
         key={outlet.id}

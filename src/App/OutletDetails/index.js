@@ -17,7 +17,6 @@ const style = {
 
 export default ({ location, history }) => {
   const { outlet, packsSold } = location.state;
-  console.log("PACKS", packsSold, outlet);
   const contract = (
     <Typography>
       Start: {outlet.contractStart}
