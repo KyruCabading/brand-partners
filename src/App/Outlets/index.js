@@ -5,30 +5,8 @@ import ParallaxImage from "../ParallaxImage";
 import { Typography } from "@material-ui/core";
 
 class OutletsContainer extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      outlets: null,
-      packsSold: null
-    };
-  }
-
-  componentDidMount() {
-    this.fetchData();
-  }
-
-  fetchData = () => {
-    fetch("https://api.sheety.co/f69fcf65-e2ef-4740-a6fd-bcc8a3133561")
-      .then(response => response.json())
-      .then(packsSold => this.setState({ packsSold }));
-
-    fetch("https://api.sheety.co/627ab202-2874-49bc-acb6-36d44321d0ea")
-      .then(response => response.json())
-      .then(outlets => this.setState({ outlets }));
-  };
-
   renderOutlets = outlets => {
+    console.log(outlets);
     return outlets.map(outlet => (
       <Link
         key={outlet.id}
