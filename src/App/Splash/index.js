@@ -25,7 +25,7 @@ const Splash = props => {
         src={require("./smoke-loading.gif")}
       />
       <Typography variant="caption" className="animated fadeInStagger">
-        {`Welcome` + name}
+        {`Welcome ` + name}
       </Typography>
     </div>
   );
