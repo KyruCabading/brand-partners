@@ -18,7 +18,7 @@ const style = {
 export default props => {
   const { content } = props;
   const contentArray = content.split(",");
-  console.log(contentArray);
+
   return (
     <React.Fragment>
       {contentArray.map((content, index) => {

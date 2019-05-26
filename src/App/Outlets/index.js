@@ -27,7 +27,7 @@ class OutletsContainer extends Component {
     const { outlets } = this.props;
     if (outlets) {
       return (
-        <React.Fragment>
+        <div>
           {this.renderOutlets(outlets)}
           <Typography variant="caption" className="gov-warning">
             <div>.</div>
@@ -35,7 +35,7 @@ class OutletsContainer extends Component {
             <div>Cigarette Smoking is dangerous to your health.</div>
             <div>.</div>
           </Typography>
-        </React.Fragment>
+        </div>
       );
     }
     return null;
