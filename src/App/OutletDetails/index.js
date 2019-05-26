@@ -70,8 +70,6 @@ export default ({ location, history }) => {
           <Section title="Contract Details" content={contract} />
         )}
 
-        <Section title="Foot traffic" content={outlet.footTraffic} />
-
         {/* Start of Chart */}
         {true && (
           <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>

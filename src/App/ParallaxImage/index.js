@@ -35,13 +35,13 @@ const ParallaxImage = props => {
               <FontAwesomeIcon icon={faMapMarkerAlt} /> {outlet.location}
             </Typography>
 
-            {outlet.contract && (
+            {outlet.new && (
               <Typography variant="caption" style={style.subtitle}>
                 <img
                   src={bird}
-                  style={{ margin: "0 1vw", opacity: "0.7", width: "5vw" }}
+                  style={{ margin: "0 1vw", opacity: "0.5", width: "4vw" }}
                 />{" "}
-                Exclusive
+                New
               </Typography>
             )}
           </div>
