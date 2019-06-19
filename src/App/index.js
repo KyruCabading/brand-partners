@@ -5,7 +5,7 @@ import { IconButton } from "@material-ui/core/";
 import InsertChart from "@material-ui/icons/InsertChart";
 import { Route } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
-
+import classNames from "classnames";
 import "./style.css";
 
 import Outlets from "./Outlets";
@@ -92,7 +92,7 @@ class App extends Component {
 
     fetch("https://api.sheety.co/627ab202-2874-49bc-acb6-36d44321d0ea")
       .then(response => response.json())
-      .then(outlets => this.setState({ outlets }));
+      .then(outlets => this.setState({ outlets }, () => {}));
   };
 
   render() {
@@ -139,17 +139,18 @@ class App extends Component {
                     exact
                     path="/"
                     render={props => {
-                      if (loading) {
-                        return <Splash />;
-                      } else {
-                        return (
-                          <Outlets
-                            outlets={this.state.outlets}
-                            packsSold={this.state.packsSold}
-                            secret={secret}
-                          />
-                        );
-                      }
+                      return (
+                        <React.Fragment>
+                          {loading ? <Splash /> : null}
+                          <div style={loading ? { display: "none" } : null}>
+                            <Outlets
+                              outlets={this.state.outlets}
+                              packsSold={this.state.packsSold}
+                              secret={secret}
+                            />
+                          </div>
+                        </React.Fragment>
+                      );
                     }}
                   />
                   <Route
