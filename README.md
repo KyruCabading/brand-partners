@@ -1,5 +1,5 @@
 # Winston Partners
-A React Web application that presents Winston Outlet Partners.
+A React Web application that presents Winston Outlet visually.
 
 ## Access
 Demo Link: https://winston.netlify.com/
