@@ -13,13 +13,13 @@ The `name` parameter will allow personalization for the user once they load the 
 A simple way this secret & name is provided is through a QR Code like this below:
 <img src="https://i.imgur.com/hEUfI26.png" width="300"> 
 
-## Homepage
-
+## Preview
+### Homepage
 <img src="https://i.imgur.com/rFLJcq1.png" width="300"> 
 Home page displays a list of available outlets. Each outlet is displayed with a Hero Image and location details
 
 
 
-## Outlet Detail
+### Outlet Detail
 <img src="https://i.imgur.com/mfXioGy.png" width="300">
 
