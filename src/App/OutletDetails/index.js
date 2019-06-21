@@ -48,18 +48,18 @@ export default ({ location, history }) => {
         <SectionSwipeable content={outlet.about} />
 
         <SectionCarousel
-          title="Branding"
+          title="Partnership"
           images={getArrayFromString(outlet.brandingImages)}
           listItems={getArrayFromString(outlet.brandingItems)}
         />
 
-        {outlet.trainingImages && (
+        {/* {outlet.trainingImages && (
           <SectionCarousel
             title="Training"
             images={getArrayFromString(outlet.trainingImages)}
             listItems={getArrayFromString(outlet.trainingItems)}
           />
-        )}
+        )} */}
 
         <SectionList
           title="Primary Consumer Segments"
@@ -71,7 +71,7 @@ export default ({ location, history }) => {
         )}
 
         {/* Start of Chart */}
-        {true && (
+        {/* {true && (
           <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
             <Section
               title="Organic Sales"
@@ -84,7 +84,7 @@ export default ({ location, history }) => {
               y1={outlet.slug}
             />
           </div>
-        )}
+        )} */}
 
         <Typography variant="caption" className="gov-warning">
           <div>.</div>
