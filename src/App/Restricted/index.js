@@ -24,9 +24,6 @@ const Restricted = props => {
       <Typography variant="title" align="center">
         Sorry, you cannot access this page.
       </Typography>
-      <Typography variant="title" align="center">
-        Please scan your QR code for access.
-      </Typography>
     </div>
   );
 };

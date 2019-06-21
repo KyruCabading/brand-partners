@@ -99,7 +99,7 @@ class App extends Component {
     const { outlets, packsSold, delayed } = this.state;
     const loading = delayed || outlets.length === 0 || packsSold.length === 0;
     const secret = new URLSearchParams(location.search).get("secret");
-    const isSecretValid = window.atob(secret).trim() === "ilovebabyjana";
+    const isSecretValid = window.atob(secret).trim() === "ilovebabyjanareborn";
 
     if (!isSecretValid) {
       return <Restricted />;
