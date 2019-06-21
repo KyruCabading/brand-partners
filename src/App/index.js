@@ -117,7 +117,7 @@ class App extends Component {
                       location.pathname === "/" && !loading ? "block" : "none"
                   }}
                 >
-                  <Link to="/area">
+                  <Link to="/area?secret=aWxvdmViYWJ5amFuYQo">
                     <IconButton
                       className="chart-icon"
                       style={style.actions.button}
