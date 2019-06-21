@@ -2,166 +2,166 @@
   {
     "run": "26-Apr",
     "smokerContacts": 345,
-    "uniqueTrialist": 338,
+    "trialist": 338,
     "customerCount": 801,
     "scWithPurchase": 78,
-    "red": 59,
-    "blue": 78,
-    "caster": 40,
-    "menthol": 95
+    "red": 11,
+    "blue": 53,
+    "caster": 20,
+    "menthol": 64
   },
   {
     "run": "27-Apr",
     "smokerContacts": 335,
-    "uniqueTrialist": 328,
+    "trialist": 328,
     "customerCount": 625,
     "scWithPurchase": 85,
-    "red": 55,
-    "blue": 76,
-    "caster": 38,
-    "menthol": 76
+    "red": 4,
+    "blue": 99,
+    "caster": 41,
+    "menthol": 15
   },
   {
     "run": "4-May",
     "smokerContacts": 1066,
-    "uniqueTrialist": 1024,
+    "trialist": 1024,
     "customerCount": 3147,
     "scWithPurchase": 247,
-    "red": 295,
-    "blue": 389,
-    "caster": 311,
-    "menthol": 349
+    "red": 19,
+    "blue": 187,
+    "caster": 43,
+    "menthol": 65
   },
   {
     "run": "10-May",
     "smokerContacts": 516,
-    "uniqueTrialist": 504,
+    "trialist": 504,
     "customerCount": 706,
     "scWithPurchase": 67,
-    "red": 80,
-    "blue": 80,
-    "caster": 100,
-    "menthol": 200
+    "red": 10,
+    "blue": 42,
+    "caster": 33,
+    "menthol": 49
   },
   {
     "run": "17-May",
     "smokerContacts": 320,
-    "uniqueTrialist": 305,
+    "trialist": 305,
     "customerCount": 758,
     "scWithPurchase": 66,
-    "red": 23,
-    "blue": 73,
-    "caster": 89,
-    "menthol": 84
+    "red": 12,
+    "blue": 32,
+    "caster": 35,
+    "menthol": 46
   },
   {
     "run": "18-May",
     "smokerContacts": 329,
-    "uniqueTrialist": 325,
+    "trialist": 325,
     "customerCount": 656,
     "scWithPurchase": 60,
-    "red": 75,
-    "blue": 76,
-    "caster": 78,
-    "menthol": 86
+    "red": 10,
+    "blue": 40,
+    "caster": 38,
+    "menthol": 33
   },
   {
     "run": "24-May",
     "smokerContacts": 486,
-    "uniqueTrialist": 481,
+    "trialist": 481,
     "customerCount": 920,
     "scWithPurchase": 76,
-    "red": 80,
-    "blue": 96,
-    "caster": 78,
-    "menthol": 209
+    "red": 16,
+    "blue": 58,
+    "caster": 29,
+    "menthol": 41
   },
   {
     "run": "25-May",
     "smokerContacts": 441,
-    "uniqueTrialist": 439,
+    "trialist": 439,
     "customerCount": 869,
     "scWithPurchase": 84,
-    "red": 58,
-    "blue": 114,
-    "caster": 113,
-    "menthol": 113
+    "red": 48,
+    "blue": 19,
+    "caster": 42,
+    "menthol": 17
   },
   {
     "run": "31-May",
     "smokerContacts": 430,
-    "uniqueTrialist": 430,
+    "trialist": 430,
     "customerCount": 904,
     "scWithPurchase": 90,
-    "red": 69,
-    "blue": 118,
-    "caster": 115,
-    "menthol": 114
+    "red": 20,
+    "blue": 36,
+    "caster": 46,
+    "menthol": 42
   },
   {
     "run": "1-Jun",
     "smokerContacts": 481,
-    "uniqueTrialist": 478,
+    "trialist": 478,
     "customerCount": 741,
     "scWithPurchase": 55,
-    "red": 98,
-    "blue": 157,
-    "caster": 50,
-    "menthol": 169
+    "red": 12,
+    "blue": 21,
+    "caster": 29,
+    "menthol": 45
   },
   {
     "run": "7-Jun",
     "smokerContacts": 554,
-    "uniqueTrialist": 552,
+    "trialist": 552,
     "customerCount": 909,
     "scWithPurchase": 146,
-    "red": 56,
-    "blue": 137,
-    "caster": 236,
-    "menthol": 118
+    "red": 58,
+    "blue": 78,
+    "caster": 19,
+    "menthol": 37
   },
   {
     "run": "8-Jun",
     "smokerContacts": 425,
-    "uniqueTrialist": 421,
+    "trialist": 421,
     "customerCount": 869,
     "scWithPurchase": 51,
-    "red": 89,
-    "blue": 54,
-    "caster": 98,
-    "menthol": 180
+    "red": 23,
+    "blue": 24,
+    "caster": 23,
+    "menthol": 28
   },
   {
     "run": "11-Jun",
     "smokerContacts": 878,
-    "uniqueTrialist": 867,
+    "trialist": 867,
     "customerCount": 2891,
     "scWithPurchase": 108,
-    "red": 189,
-    "blue": 236,
-    "caster": 384,
-    "menthol": 422
+    "red": 35,
+    "blue": 84,
+    "caster": 32,
+    "menthol": 53
   },
   {
     "run": "14-Jun",
     "smokerContacts": 471,
-    "uniqueTrialist": 467,
+    "trialist": 467,
     "customerCount": 914,
     "scWithPurchase": 127,
-    "red": 22,
-    "blue": 131,
-    "caster": 167,
-    "menthol": 147
+    "red": 30,
+    "blue": 66,
+    "caster": 27,
+    "menthol": 49
   },
   {
     "run": "15-Jun",
     "smokerContacts": 429,
-    "uniqueTrialist": 426,
+    "trialist": 426,
     "customerCount": 755,
     "scWithPurchase": 72,
-    "red": 25,
-    "blue": 109,
-    "caster": 127,
-    "menthol": 165
+    "red": 22,
+    "blue": 16,
+    "caster": 56,
+    "menthol": 34
   }
 ]

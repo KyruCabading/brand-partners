@@ -50,7 +50,7 @@ export default ({ location, history }) => {
           title="Organic Winston Pack Sales"
           content="These are the Total Packs Sold within Central GMA in 2019."
         />
-        <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
+        <div style={{ height: 300, width: "100%", paddingBottom: 25 }}>
           <Chart
             data={packsSold}
             dataName="month"
@@ -63,8 +63,7 @@ export default ({ location, history }) => {
           title="Eagle 121 Activation Data"
           content="Eagle 121 Activations are done every Friday & Saturday for Winston partner outlets in CGMA."
         />
-        <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
-          <Section title="KPIs" content="Average Packs sold per run: 120" />
+        <div style={{ height: 300, width: "100%", paddingBottom: 25 }}>
           <StackedChart
             data={data}
             x="run"
@@ -74,27 +73,32 @@ export default ({ location, history }) => {
             referenceLineColor="red"
           />
         </div>
-        <div style={{ height: 300, width: "100%", paddingBottom: 50 }}>
-          <Section>
-            <Typography>
-              Smoker Contact purchase rate: 23.1% <br />
-            </Typography>
-          </Section>
+
+        <div style={{ height: 300, width: "100%" }}>
           <Chart
             data={data}
             dataName="run"
             y1Name="Customer Count"
-            y2Name="Unique Trialist"
-            y3Name="Smoker Contacts"
+            y2Name="Trialist"
+            y3Name="Smoker Contact"
+            y4Name="Investor"
             y1="customerCount"
-            y2="uniqueTrialist"
+            y2="trialist"
             y3="smokerContacts"
+            y4="scWithPurchase"
             referenceLine={300}
             referenceLineColor="red"
-            referenceLine2={150}
+            referenceLine2={240}
             referenceLineColor2="#ffe082"
           />
         </div>
+
+        <Section title="KPIs">
+          <Typography>
+            98.78% Trial Rate - Trialist / Smoker Contact <br />
+            19.00% Strike Rate - Investor / Smoker Contact: <br />
+          </Typography>
+        </Section>
 
         <Typography variant="caption" className="gov-warning">
           <div>.</div>
