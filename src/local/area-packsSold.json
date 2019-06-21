@@ -1,62 +1,22 @@
 [
   {
-    "month": "June",
-    "ribshack": 10,
-    "nlos": 20,
-    "homework": 20,
-    "the-grill": 20,
-    "mulligans-overtime": 10,
-    "noyski": 20,
-    "the-quarry": 10,
-    "lounge-lizard": 10,
-    "totalPacksSold": 580
+    "month": "January",
+    "totalPacksSold": 172
   },
   {
-    "month": "July",
-    "ribshack": 10,
-    "nlos": 20,
-    "homework": 20,
-    "the-grill": 20,
-    "mulligans-overtime": 10,
-    "noyski": 20,
-    "the-quarry": 40,
-    "lounge-lizard": 10,
-    "totalPacksSold": 390
+    "month": "February",
+    "totalPacksSold": 88
   },
   {
-    "month": "August",
-    "ribshack": 10,
-    "nlos": 20,
-    "homework": 20,
-    "the-grill": 20,
-    "mulligans-overtime": 10,
-    "noyski": 10,
-    "the-quarry": 10,
-    "lounge-lizard": 40,
-    "totalPacksSold": 460
+    "month": "March",
+    "totalPacksSold": 122
   },
   {
-    "month": "September",
-    "ribshack": 20,
-    "nlos": 40,
-    "homework": 40,
-    "the-grill": 40,
-    "mulligans-overtime": 20,
-    "noyski": 20,
-    "the-quarry": 0,
-    "lounge-lizard": 0,
-    "totalPacksSold": 560
+    "month": "April",
+    "totalPacksSold": 142
   },
   {
-    "month": "October",
-    "ribshack": 30,
-    "nlos": 40,
-    "homework": 40,
-    "the-grill": 60,
-    "mulligans-overtime": 60,
-    "noyski": 60,
-    "the-quarry": 30,
-    "lounge-lizard": 20,
-    "totalPacksSold": 1150
+    "month": "May",
+    "totalPacksSold": 185
   }
 ]
