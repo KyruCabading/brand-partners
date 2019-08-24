@@ -126,7 +126,7 @@ class App extends Component {
                       <InsertChart />
                     </IconButton>
                   </Link>
-                  <img className="logo" src={logo} alt="Winston Logo"/>
+                  <img className="logo" src={logo} alt="Logo"/>
                 </div>
                 <AnimatedSwitch
                   atEnter={bounceTransition.atEnter}

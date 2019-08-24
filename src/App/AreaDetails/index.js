@@ -47,21 +47,21 @@ export default ({ location, history }) => {
         )}
 
         <Section
-          title="Organic Winston Pack Sales"
-          content="These are the Total Packs Sold within Central GMA in 2019."
+          title="Organic Sales"
+          content="These are the items sold within Makati Philippines in 2019."
         />
         <div style={{ height: 300, width: "100%", paddingBottom: 25 }}>
           <Chart
             data={packsSold}
             dataName="month"
-            y1Name="Total Packs Sold"
+            y1Name="Total Items Sold"
             y1="totalPacksSold"
           />
         </div>
 
         <Section
-          title="Eagle 121 Activation Data"
-          content="Eagle 121 Activations are done every Friday & Saturday for Winston partner outlets in CGMA."
+          title="Promotion Data"
+          content="Promotions are done every Friday & Saturday for partner outlets in Makati."
         />
         <div style={{ height: 300, width: "100%", paddingBottom: 25 }}>
           <StackedChart
@@ -80,7 +80,7 @@ export default ({ location, history }) => {
             dataName="run"
             y1Name="Customer Count"
             y2Name="Trialist"
-            y3Name="Smoker Contact"
+            y3Name="Contacts"
             y4Name="Investor"
             y1="customerCount"
             y2="trialist"
@@ -95,15 +95,15 @@ export default ({ location, history }) => {
 
         <Section title="KPIs">
           <Typography>
-            98.78% Trial Rate - Trialist / Smoker Contact <br />
-            19.00% Strike Rate - Investor / Smoker Contact: <br />
+            98.78% Trial Rate - Trialist / Contacts <br />
+            19.00% Strike Rate - Investor / Contacts: <br />
           </Typography>
         </Section>
 
         <Typography variant="caption" className="gov-warning">
           <div>.</div>
-          Government Warning:
-          <div>Cigarette Smoking is dangerous to your health.</div>
+          Brand Partners:
+          <div>Enjoy!</div>
           <div>.</div>
         </Typography>
       </Card>
