@@ -5,7 +5,7 @@ A React Web application that presents brand partners outlets.
 
 **Required Parameters:**
 
-The `secret` parameter is needed on the url in order to gain access. This is to give access only to authorized users.
+The `secret` parameter is needed on the url in order to gain access. This is to give access only to authorized users.`(Currently Disabled)`
 
 The `name` parameter will allow personalization for the user once they load the Brand Partners app. 
 
