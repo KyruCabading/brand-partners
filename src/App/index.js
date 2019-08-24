@@ -86,11 +86,11 @@ class App extends Component {
   }
 
   fetchData = () => {
-    fetch("https://api.sheety.co/f69fcf65-e2ef-4740-a6fd-bcc8a3133561")
+    fetch("https://api.sheety.co/40c61f05-95ad-4126-a55b-dcc05fec190c")
       .then(response => response.json())
       .then(packsSold => this.setState({ packsSold }));
 
-    fetch("https://api.sheety.co/627ab202-2874-49bc-acb6-36d44321d0ea")
+    fetch("https://api.sheety.co/a719b882-b087-4387-97f3-bd49210d2d03")
       .then(response => response.json())
       .then(outlets => this.setState({ outlets }, () => {}));
   };
@@ -101,9 +101,9 @@ class App extends Component {
     const secret = new URLSearchParams(location.search).get("secret");
     const isSecretValid = window.atob(secret).trim() === "ilovebabyjanareborn";
 
-    if (!isSecretValid) {
-      return <Restricted />;
-    }
+    // if (!isSecretValid) {
+    //   return <Restricted />;
+    // }
 
     return (
       <React.Fragment>
@@ -126,7 +126,7 @@ class App extends Component {
                       <InsertChart />
                     </IconButton>
                   </Link>
-                  <img className="logo" src={logo} alt="Winston Logo" />
+                  <img className="logo" src={logo} alt="Winston Logo"/>
                 </div>
                 <AnimatedSwitch
                   atEnter={bounceTransition.atEnter}

@@ -39,7 +39,7 @@ const ParallaxImage = props => {
               <Typography variant="caption" style={style.subtitle}>
                 <img
                   src={bird}
-                  style={{ margin: "0 1vw", opacity: "0.5", width: "4vw" }}
+                  style={{ margin: "0 1vw", opacity: "0.5", width: "3vw" }}
                 />{" "}
                 New
               </Typography>
