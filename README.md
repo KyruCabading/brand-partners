@@ -2,8 +2,9 @@
 A React Web application that presents brand partners outlets.
 
 ## Access
+Deployment: https://brand-partners.netlify.com
 
-Restriction features are currently disabled, all can access through the link above.
+Restriction features are currently disabled, everyone can access through the link above.
 
 **Required Parameters:**
 
