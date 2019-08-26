@@ -26,5 +26,6 @@ Each outlet detail page displays a description and other informational fields ab
 
 ### Area Dashboard (Charts)
 On the Area Dashboard Screen (click the chart icon at the bottom of the homepage) you can view charts on specific metrics of the project.
+
 <img width="499" alt="Screen Shot 2019-08-25 at 9 57 18 PM" src="https://user-images.githubusercontent.com/31245853/63666199-61fb1980-c783-11e9-8f56-98268c691181.png">
 
