@@ -5,23 +5,26 @@ import { IconButton } from "@material-ui/core/";
 import InsertChart from "@material-ui/icons/InsertChart";
 import { Route } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
-import classNames from "classnames";
 import "./style.css";
 
 import Outlets from "./Outlets";
 import Details from "./OutletDetails";
 import AreaDetails from "./AreaDetails";
 import Splash from "./Splash";
-import Restricted from "./Restricted";
+// import Restricted from "./Restricted";
+
+import outlets from "../data/outlets";
+import packsSold from "../local/area-packsSold.json";
 
 import logo from "../local/logo.png";
 
+const LOADING_TIME = 5000; // 5s
 // we need to map the `scale` prop we define below
 // to the transform style property
 function mapStyles(styles) {
   return {
     opacity: styles.opacity,
-    transform: `scale(${styles.scale})`
+    transform: `scale(${styles.scale})`,
   };
 }
 
@@ -29,7 +32,7 @@ function mapStyles(styles) {
 function bounce(val) {
   return spring(val, {
     stiffness: 700,
-    damping: 30
+    damping: 30,
   });
 }
 
@@ -37,27 +40,27 @@ const bounceTransition = {
   // start in a transparent, upscaled state
   atEnter: {
     opacity: 0,
-    scale: 1.2
+    scale: 1.2,
   },
   // leave in a transparent, downscaled state
   atLeave: {
     opacity: 1,
-    scale: 1
+    scale: 1,
   },
   // and rest at an opaque, normally-scaled state
   atActive: {
     opacity: 1,
-    scale: bounce(1)
-  }
+    scale: bounce(1),
+  },
 };
 
 const style = {
   actions: {
     button: {
       color: "white",
-      position: "fixed"
-    }
-  }
+      position: "fixed",
+    },
+  },
 };
 
 class App extends Component {
@@ -66,9 +69,7 @@ class App extends Component {
 
     this.state = {
       logoOpacity: 1,
-      outlets: [],
-      packsSold: [],
-      delayed: true
+      delayed: true,
     };
   }
 
@@ -77,29 +78,18 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.fetchData();
-    this.timer = setTimeout(() => this.setState({ delayed: false }), 10000);
+    this.timer = setTimeout(() => this.setState({ delayed: false }), 5000); // Give time to show loading
   }
 
   componentWillUnmount() {
     clearInterval(this.timer);
   }
 
-  fetchData = () => {
-    fetch("https://api.sheety.co/40c61f05-95ad-4126-a55b-dcc05fec190c")
-      .then(response => response.json())
-      .then(packsSold => this.setState({ packsSold }));
-
-    fetch("https://api.sheety.co/a719b882-b087-4387-97f3-bd49210d2d03")
-      .then(response => response.json())
-      .then(outlets => this.setState({ outlets }, () => {}));
-  };
-
   render() {
-    const { outlets, packsSold, delayed } = this.state;
+    const { delayed } = this.state;
     const loading = delayed || outlets.length === 0 || packsSold.length === 0;
     const secret = new URLSearchParams(location.search).get("secret");
-    const isSecretValid = window.atob(secret).trim() === "ilovebabyjanareborn";
+    // const isSecretValid = window.atob(secret).trim() === "ilovebabyjanareborn";
 
     // if (!isSecretValid) {
     //   return <Restricted />;
@@ -114,7 +104,7 @@ class App extends Component {
                 <div
                   style={{
                     display:
-                      location.pathname === "/" && !loading ? "block" : "none"
+                      location.pathname === "/" && !loading ? "block" : "none",
                   }}
                 >
                   <Link to="/area?secret=aWxvdmViYWJ5amFuYQo">
@@ -126,7 +116,7 @@ class App extends Component {
                       <InsertChart />
                     </IconButton>
                   </Link>
-                  <img className="logo" src={logo} alt="Logo"/>
+                  <img className="logo" src={logo} alt="Logo" />
                 </div>
                 <AnimatedSwitch
                   atEnter={bounceTransition.atEnter}
@@ -138,14 +128,14 @@ class App extends Component {
                   <Route
                     exact
                     path="/"
-                    render={props => {
+                    render={(props) => {
                       return (
                         <React.Fragment>
                           {loading ? <Splash /> : null}
                           <div style={loading ? { display: "none" } : null}>
                             <Outlets
-                              outlets={this.state.outlets}
-                              packsSold={this.state.packsSold}
+                              outlets={outlets}
+                              packsSold={packsSold}
                               secret={secret}
                             />
                           </div>
@@ -156,14 +146,14 @@ class App extends Component {
                   <Route
                     exact
                     path={`/outlet/:outletId`}
-                    render={props => (
+                    render={(props) => (
                       <Details {...props} toggleLogo={this.toggleLogo} />
                     )}
                   />
                   <Route
                     exact
                     path={`/area`}
-                    render={props => (
+                    render={(props) => (
                       <AreaDetails {...props} toggleLogo={this.toggleLogo} />
                     )}
                   />
